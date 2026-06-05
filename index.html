@@ -155,6 +155,8 @@
   .warning { background: #fff3cd; border-radius: 6px; padding: 10px 14px; margin: 10px 0; font-size: 0.92rem; border-left: 3px solid #d4aa40; }
   .key-box { background: linear-gradient(135deg, var(--lavender), var(--mint)); border-radius: 12px; padding: 18px 22px; margin: 16px 0; border: 1.5px solid var(--lavender-mid); }
   .key-box strong { color: var(--lavender-deep); }
+  .narrative { background: #fff; border-left: 5px solid var(--lavender-mid); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; font-size: .97rem; line-height: 1.85; box-shadow: 0 1px 6px var(--shadow); }
+  .narrative strong { color: var(--lavender-deep); }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 12px 0; }
   @media(max-width:700px){ .two-col { grid-template-columns: 1fr; } .tab-content{padding:18px 12px 40px;} .site-header{padding:20px 16px 14px;} .site-header h1{font-size:1.5rem;} }
 </style>
@@ -167,14 +169,14 @@
 </div>
 
 <div class="tab-bar">
-  <button class="tab-btn active" onclick="showTab('intro')">🌱 Introduction</button>
-  <button class="tab-btn" onclick="showTab('tyrannie')">⚖️ Tyrannie</button>
-  <button class="tab-btn" onclick="showTab('aide')">🤝 Absence d'aide</button>
-  <button class="tab-btn" onclick="showTab('td-genocides')">🌍 TD Génocides</button>
-  <button class="tab-btn" onclick="showTab('td-radicalisation')">🔥 TD Radicalisation</button>
-  <button class="tab-btn" onclick="showTab('td-medias')">📺 TD Médias & Autorité</button>
-  <button class="tab-btn" onclick="showTab('td-viol')">⚖️ TD Viol & Violences</button>
-  <button class="tab-btn" onclick="showTab('annales')">📝 Annales</button>
+  <button class="tab-btn active" onclick="showTab('intro',this)">🌱 Introduction</button>
+  <button class="tab-btn" onclick="showTab('tyrannie',this)">⚖️ Tyrannie</button>
+  <button class="tab-btn" onclick="showTab('aide',this)">🤝 Absence d'aide</button>
+  <button class="tab-btn" onclick="showTab('td-genocides',this)">🌍 TD Génocides</button>
+  <button class="tab-btn" onclick="showTab('td-radicalisation',this)">🔥 TD Radicalisation</button>
+  <button class="tab-btn" onclick="showTab('td-medias',this)">📺 TD Médias & Autorité</button>
+  <button class="tab-btn" onclick="showTab('td-viol',this)">⚖️ TD Viol & Violences</button>
+  <button class="tab-btn" onclick="showTab('annales',this)">📝 Annales</button>
 </div>
 
 <!-- ==================== INTRODUCTION ==================== -->
@@ -193,8 +195,8 @@
     <h4>Contexte</h4>
     <ul>
       <li>500 hommes, trop âgés pour le front, relativement peu nazifiés</li>
-      <li>Dirigés par le capitaine Willem Trapp — apprécié, ému, laisse le choix de refuser</li>
-      <li>Premier jour : <strong>un seul homme</strong> refuse. Les jours suivants, de moins en moins refusent</li>
+      <li>Dirigés par le <strong>Major Wilhelm Trapp</strong> — apprécié, ému, laisse le choix de refuser</li>
+      <li>Premier jour : <strong>une douzaine d'hommes</strong> (~12 sur 500) font un pas en avant et refusent de participer. Les jours suivants, <strong>de plus en plus d'hommes</strong> demandent à être réaffectés à d'autres tâches (gardes, patrouilles) pour éviter les exécutions.</li>
       <li>Bilan : <strong>38 000 juifs exécutés</strong>, 45 000 déportés sur 14 mois</li>
       <li>Moins de 20 % refuseront au total. Aucune sanction pour ceux qui refusent.</li>
     </ul>
@@ -221,6 +223,9 @@
   </div>
 
   <h3>Les mécanismes de défense psychologique</h3>
+  <div class="card peach">
+    <p>Il y a chez la plupart des hommes un réel malaise physique et moral : dégoût de tuer, vision des corps entassés — choses contraires à leur conscience. L'équilibre psychologique est menacé. Certains ont des <strong>vomissements</strong>, tremblements, conduites d'évitement (tenter d'être affectés au transport plutôt qu'aux exécutions). C'est pourquoi ils mettent en œuvre des mécanismes de défense et de rationalisation.</p>
+  </div>
   <div class="accordion">
     <button class="accordion-btn rose-acc" onclick="toggleAcc(this)">🛡️ Mécanisme d'évitement de la responsabilité</button>
     <div class="accordion-body">
@@ -240,6 +245,12 @@
     </div>
   </div>
 
+  <h3>Point d'actualité — Gaza / Hamas (2023)</h3>
+  <div class="card sky">
+    <p>1 200 Israéliens massacrés par le Hamas en octobre 2023. Au moment de la réponse militaire d'Israël, Golda Meir avait déclaré : <em>« Nous pouvons pardonner aux Arabes d'avoir tué nos enfants. Nous ne pouvons pas leur pardonner de nous avoir obligés à tuer les leurs. »</em></p>
+    <p>→ Mécanisme de <strong>réinterprétation de la réalité</strong> en miroir : « C'est leur faute si nous devons faire la guerre. La responsabilité morale leur revient. » Et aussi : <em>« Nous n'aurons la paix que lorsqu'ils aimeront leurs enfants plus qu'ils nous détestent. »</em> — attribuer à l'autre une haine si forte qu'elle surpasse l'amour parental : déshumanisation de l'ennemi.</p>
+  </div>
+
   <h3>Hannah Arendt & la banalité du mal</h3>
   <div class="card lavender">
     <p>Arendt observe le procès d'<strong>Eichmann</strong> — responsable de l'organisation des convois vers les camps d'extermination. Sa défense : « Je n'ai fait qu'obéir aux ordres. »</p>
@@ -249,7 +260,7 @@
       <dt>La virulence de l'idéologie — « la camisole de la logique »</dt>
       <dd>La banalité du mal se couple à la virulence de l'idéologie. Arendt : <em>« consiste à échanger la liberté inhérente de faculté humaine de penser pour la camisole de la logique. »</em> On adhère sans questionnement à une prémisse (les juifs sont de la vermine) et on en déroulait les conséquences logiques (les exterminer), sans jamais l'interroger. Sacralisation de l'idée ; l'humain n'est qu'un instrument. C'est pourquoi les principaux constructeurs de massacres sont souvent des <strong>intellectuels et idéologues</strong> (cf. Lénine, Staline).</dd>
       <dt>Le village de Josefow</dt>
-      <dd>Premier massacre du 101ème bataillon : 1 800 juifs à éliminer. Le 11 juillet 1942, le capitaine <strong>Trapp</strong> reçoit l'ordre et le transmet à ses hommes presque en larmes, leur laissant la possibilité de refuser. Un seul homme saisit cette occasion le premier jour. Les détenus sont emmenés par camion, agenouillés en forêt par groupes de 30 et abattus. Les hommes qui refusent de tuer tentent d'être affectés au transport, mais la plupart finissent par participer.</dd>
+      <dd>Premier massacre du 101ème bataillon : 1 800 juifs à éliminer. Le 11 juillet 1942, le <strong>Major Wilhelm Trapp</strong> reçoit l'ordre et le transmet à ses hommes presque en larmes, leur laissant la possibilité de refuser. <strong>Une douzaine d'hommes</strong> (~12 sur 500) font un pas en avant et refusent dès le premier jour — ce qui montre que la porte était ouverte, mais que la pression de groupe restait écrasante pour les 488 autres. Les hommes qui participent emmènent les victimes par camion, les agenouillent en forêt par groupes de 30 et les abattent. Au fil des 14 mois et des missions suivantes, <strong>de plus en plus d'hommes</strong> demandent à être réaffectés à des tâches non létales (gardes, patrouilles). Au total, on estime que <strong>10 à 20 % des hommes</strong> ont fini par refuser de tirer ou évité activement de le faire.</dd>
     </dl>
   </div>
 
@@ -276,11 +287,17 @@
 <div id="tab-tyrannie" class="tab-content">
   <h2>⚖️ Chapitre 1 — Les comportements tyranniques</h2>
 
+<div class="narrative">
+  <strong>L'histoire que raconte Tostain dans ce chapitre :</strong> il part d'une expérience célèbre et choquante — Zimbardo met des étudiants normaux dans un rôle de gardien de prison, et en quelques jours ils deviennent sadiques. Conclusion : la situation crée la tyrannie.<br><br>
+  Mais cette conclusion est <em>trop simple</em>, et surtout elle repose sur une expérience truquée. Tostain présente alors une deuxième expérience, la BBC Prison Study, qui montre quelque chose de très différent : les gardiens ne deviennent pas tyranniques spontanément — au contraire, ce sont les <em>détenus</em> qui se révoltent et prennent le pouvoir. La tyrannie n'émerge qu'ensuite, quand le collectif s'effondre.<br><br>
+  <strong>Le fil conducteur :</strong> de la vision situationniste pure (Zimbardo) à la vision interactionniste (Reicher & Haslam) — les individus ne sont pas passifs, ils agissent selon qui ils sont et qui ils pensent être.
+</div>
+
   <div class="sub-tab-bar">
-    <button class="sub-tab-btn active" onclick="showSub('ty','ty1')">1. Expérience de Stanford</button>
-    <button class="sub-tab-btn" onclick="showSub('ty','ty2')">2. Critiques (Le Texier)</button>
-    <button class="sub-tab-btn" onclick="showSub('ty','ty3')">3. BBC Prison Study</button>
-    <button class="sub-tab-btn" onclick="showSub('ty','ty4')">4. Synthèse Zimbardo vs Reicher</button>
+    <button class="sub-tab-btn active" onclick="showSub('ty','ty1',this)">1. Expérience de Stanford</button>
+    <button class="sub-tab-btn" onclick="showSub('ty','ty2',this)">2. Critiques (Le Texier)</button>
+    <button class="sub-tab-btn" onclick="showSub('ty','ty3',this)">3. BBC Prison Study</button>
+    <button class="sub-tab-btn" onclick="showSub('ty','ty4',this)">4. Synthèse Zimbardo vs Reicher</button>
   </div>
 
   <!-- TY1 -->
@@ -290,6 +307,7 @@
     <div class="card lavender">
       <h4>Définition : Tyrannie (Zimbardo)</h4>
       <p>Système social inégal comprenant le <strong>pouvoir arbitraire et oppresseur</strong> d'un groupe sur un autre groupe.</p>
+      <p>Zimbardo a écrit <em>The Lucifer Effect: How Good People Turn Evil</em> — sur les mécanismes psychologiques et sociaux qui poussent des individus à commettre des actes malveillants. <strong>Fun fact :</strong> Zimbardo et Milgram se connaissaient bien — ils ont vécu dans le même quartier de New York et ont été élèves dans la <strong>même école</strong>.</p>
     </div>
 
     <h3>Contexte historique</h3>
@@ -300,7 +318,7 @@
       <ul>
         <li>Annonce dans le journal : 15$/jour pour 2 semaines. Tests psychologiques préalables.</li>
         <li>Répartition <strong>aléatoire</strong> en gardiens et détenus</li>
-        <li><strong>Détenus</strong> : arrêtés par surprise chez eux par de vrais policiers. Dénudés, nettoyés au produit anti-poux, bonnet et longue blouse (laissant entrevoir l'intimité), désignés par <em>numéros de matricule</em>.</li>
+        <li><strong>Détenus</strong> : arrêtés par surprise chez eux par de vrais policiers. Dénudés, nettoyés au produit anti-poux, un <strong>bonnet en bas nylon</strong> (pour simuler le crâne rasé), une longue blouse blanche pas assez longue (laissant entrevoir l'intimité → sentiment d'humiliation), désignés par <em>numéros de matricule</em> (déshumanisant).</li>
         <li><strong>Gardiens</strong> : uniformes kakis militaires, matraque, lunettes légèrement teintées (« voir sans être vus »). Consigne : pas de violence physique.</li>
       </ul>
     </div>
@@ -526,11 +544,17 @@
 <div id="tab-aide" class="tab-content">
   <h2>🤝 Chapitre 2 — L'absence d'aide aux personnes en danger</h2>
 
+<div class="narrative">
+  <strong>L'histoire que raconte Tostain :</strong> en 1964, Kitty Genovese est tuée sous les yeux de 38 témoins — du moins, c'est ce que disent les journaux. Cette affaire devient le point de départ d'une théorie célèbre : plus les témoins sont nombreux, moins ils interviennent (<em>l'effet spectateur</em>). Darley et Latané transforment ce fait divers en expériences rigoureuses et confirment le mécanisme.<br><br>
+  Mais le chapitre ne s'arrête pas là. Tostain montre ensuite que cette théorie est <em>trop pessimiste et trop simple</em> : quand la victime appartient au groupe des témoins, les gens interviennent davantage en groupe que seuls. Et en 2007, des chercheurs découvrent que l'histoire de Genovese était en grande partie fausse — il n'y avait pas 38 témoins indifférents, certains avaient bien essayé d'agir.<br><br>
+  <strong>Le fil conducteur :</strong> de l'apathie des témoins (vision pessimiste) à la dynamique de groupe comme moteur de l'aide (vision nuancée).
+</div>
+
   <div class="sub-tab-bar">
-    <button class="sub-tab-btn active" onclick="showSub('ai','ai1')">1. Affaire Genovese</button>
-    <button class="sub-tab-btn" onclick="showSub('ai','ai2')">2. Recherches Darley & Latané</button>
-    <button class="sub-tab-btn" onclick="showSub('ai','ai3')">3. Orientations actuelles</button>
-    <button class="sub-tab-btn" onclick="showSub('ai','ai4')">4. Révision historique</button>
+    <button class="sub-tab-btn active" onclick="showSub('ai','ai1',this)">1. Affaire Genovese</button>
+    <button class="sub-tab-btn" onclick="showSub('ai','ai2',this)">2. Recherches Darley & Latané</button>
+    <button class="sub-tab-btn" onclick="showSub('ai','ai3',this)">3. Orientations actuelles</button>
+    <button class="sub-tab-btn" onclick="showSub('ai','ai4',this)">4. Révision historique</button>
   </div>
 
   <!-- AI1 -->
@@ -544,7 +568,14 @@
         <li>La grande ville déshumanise et développe l'anonymat</li>
       </ul>
     </div>
-    <div class="note">📌 Cas similaire en France : affaire Narumi Kurosaki (2016, Besançon) — 11 étudiants ont été réveillés cette nuit-là. Aucun n'a prévenu la police. Lors du procès en 2022, ils ont répondu « j'avais peur pour moi ».</div>
+    <div class="note">📌 Cas similaire en France : affaire <strong>Narumi Kurosaki</strong> (2016, Besançon, cité universitaire) — tuée dans la nuit du 4 au 5 décembre par son ex petit ami Nicolas Zepeda. 11 étudiants ont été réveillés cette nuit-là :
+      <ul>
+        <li><strong>Rachel</strong>, une étudiante <strong>écossaise</strong>, entend des cris d'horreur, verrouille sa porte, envoie des textos à ses voisins et avait vu un homme louche dehors.</li>
+        <li>Une autre étudiante entend des bruits et ne ferme pas les yeux de la nuit.</li>
+        <li><strong>Adrien</strong> (chambre 133) entend des cris se terminant en râles — ne fait rien.</li>
+        <li><strong>Nabil</strong> (chambre 135) reçoit un texto de son camarade. Ils sortent inspecter les étages, ne voient rien, retournent dans leur chambre.</li>
+      </ul>
+      Aucun n'a prévenu la police. Lors du procès en 2022, ils ont répondu « j'avais peur pour moi ».</div>
   </div>
 
   <!-- AI2 -->
@@ -740,9 +771,15 @@
 <div id="tab-td-genocides" class="tab-content">
   <h2>🌍 TD 1 & 2 — Les dynamiques génocidaires : le cas rwandais</h2>
 
+<div class="narrative">
+  <strong>L'histoire que raconte Tostain dans ces TD :</strong> comment une société en vient-elle à s'autodétruire ? Le Rwanda en 1994 est l'exemple le plus brutal de notre époque récente. En 100 jours, 1 million de personnes sont tuées — des voisins tués par leurs voisins, des familles déchirées par la frontière Hutu/Tutsi.<br><br>
+  Le TD ne décrit pas les faits — il les <em>analyse</em>. Pourquoi ? Comment ? Qui ? À travers quels mécanismes des individus ordinaires en viennent-ils à commettre de tels actes ? La réponse exige une approche à plusieurs niveaux : les facteurs historiques longs (la colonisation belge qui racialise des identités fluides), les facteurs politiques immédiats (Habyarimana qui instrumentalise la haine pour garder le pouvoir), la propagande médiatique (RTLM), et les mécanismes psychologiques individuels.<br><br>
+  <strong>Le fil conducteur :</strong> un génocide ne surgit pas de nulle part — il se prépare idéologiquement et opérationnellement. Et pour le comprendre, il faut articuler les niveaux macro, méso et micro.
+</div>
+
   <div class="sub-tab-bar">
-    <button class="sub-tab-btn active" onclick="showSub('ge','ge1')">TD1 : Cas rwandais</button>
-    <button class="sub-tab-btn" onclick="showSub('ge','ge2')">TD2 : Semelin & modèle Reicher-Haslam</button>
+    <button class="sub-tab-btn active" onclick="showSub('ge','ge1',this)">TD1 : Cas rwandais</button>
+    <button class="sub-tab-btn" onclick="showSub('ge','ge2',this)">TD2 : Semelin & modèle Reicher-Haslam</button>
   </div>
 
   <!-- GE1 -->
@@ -751,7 +788,8 @@
 
     <div class="card peach">
       <h4>Repères</h4>
-      <p>Petit pays (26 000 km²). ~1 million de morts sur une population de 6,5 millions. 75% des Tutsis vivant au Rwanda ont été tués. Deux groupes principaux : Tutsis (15%, origine hamite), Hutus (85%, origine bantou). Un génocide se prépare — il n'est jamais spontané.</p>
+      <p>Petit pays (26 000 km²). ~1 million de morts sur une population de 6,5 millions. 75% des Tutsis vivant au Rwanda ont été tués. Actuellement ~12 millions d'habitants, développement économique important, État démocratique unitaire.</p>
+      <p>Trois groupes : <strong>Tutsis</strong> (15%, origine hamite, corne de l'Afrique) · <strong>Hutus</strong> (85%, origine bantou) · <strong>Twas</strong> (pygmées, minorité marginale). Un génocide se prépare — il n'est jamais spontané. Pour la justice : création du <strong>TPIR</strong> (Tribunal Pénal International pour le Rwanda).</p>
     </div>
 
     <h3>Causes profondes — Facteurs historiques longs</h3>
@@ -829,14 +867,15 @@
 
     <h3>Jacques Semelin (2003) — Approche transdisciplinaire</h3>
     <div class="card sky">
-      <p>Semelin propose de prendre en compte deux éléments :</p>
+      <p>Semelin s'intéresse notamment au mouvement de résistance (les Justes). Il identifie <strong>trois dimensions</strong> qui rendent l'analyse des génocides et massacres particulièrement complexe :</p>
       <ul>
-        <li>La <strong>profondeur historique</strong> des massacres</li>
-        <li>Une <strong>approche transdisciplinaire</strong> : perspective historique, sociologie, anthropologie, psychologie sociale</li>
+        <li><strong>Absence de menace réelle :</strong> les victimes ne constituent pas une vraie menace militaire — pourtant on les tue (civilians, enfants, voisins). Le massacre est disproportionné.</li>
+        <li><strong>Relation bourreau-victime :</strong> souvent des voisins, des proches. Au Rwanda, des pères hutus tuaient leurs enfants si leur mère était tutsie.</li>
+        <li><strong>Sidération et incompréhension :</strong> la barbarie des massacres heurte notre image de l'humanité. On ne tue pas indistinctement membres de sa propre espèce (combattants, civils, enfants). Cette sidération rend difficile l'analyse rationnelle.</li>
       </ul>
-      <h4>4 approches complémentaires</h4>
+      <p>D'où la nécessité d'une <strong>approche transdisciplinaire</strong> :</p>
       <ol>
-        <li><strong>Historique</strong> : comprendre l'histoire longue</li>
+        <li><strong>Historique</strong> : comprendre la profondeur historique</li>
         <li><strong>Sociologique</strong> : rapports entre groupes, société, institutions</li>
         <li><strong>Anthropologique</strong> : comment une culture rend la persécution acceptable</li>
         <li><strong>Psychologie sociale</strong> : dynamiques identitaires, conflits intergroupes, influence sociale, passage à l'acte</li>
@@ -872,10 +911,11 @@
     <div class="card rose">
       <h4>Deux figures de l'ennemi</h4>
       <ul>
-        <li><strong>Ennemi de l'intérieur</strong> : le suspect, le traître (Tutsi résidant au Rwanda)</li>
-        <li><strong>Ennemi de l'extérieur</strong> : l'étranger menaçant (FPR)</li>
+        <li><strong>Ennemi de l'intérieur</strong> : le suspect, le traître (Tutsi résidant au Rwanda). Cf. <em>Anatole France — Les Dieux ont soif</em> : l'ennemi intérieur, suspect par définition, présence dans le groupe qui justifie sa destruction.</li>
+        <li><strong>Ennemi de l'extérieur</strong> : l'étranger menaçant (FPR), trop nombreux, dangereux — cf. le discours du « grand remplacement ».</li>
       </ul>
-      <p>Discours de <strong>purification</strong> (cf. « nettoyage ethnique » en Bosnie). Propagande en miroir : on accuse les autres de ce qu'on va faire. Idéologie des « vrais/légitimes » vs les autres.</p>
+      <p>Discours de <strong>purification</strong> (cf. « nettoyage ethnique » en Bosnie). Propagande en miroir : on accuse les autres de ce qu'on va faire. Idéologie des « vrais/légitimes » (autochtones) vs les autres (envahisseurs).</p>
+      <p><em>Massacre avant d'être un acte physique, c'est un processus mental</em> (Semelin) : la vision de l'autre justifie qu'on va l'éliminer. L'idéologie vient avant l'acte.</p>
     </div>
 
     <h3>Monstres ordinaires vs Bourreaux volontaires</h3>
@@ -943,11 +983,11 @@
   <h2>🔥 TD3 — La radicalisation</h2>
 
   <div class="sub-tab-bar">
-    <button class="sub-tab-btn active" onclick="showSub('ra','ra1')">1. Définitions & débats</button>
-    <button class="sub-tab-btn" onclick="showSub('ra','ra2')">2. Thèses explicatives</button>
-    <button class="sub-tab-btn" onclick="showSub('ra','ra3')">3. Enquêtes & profils</button>
-    <button class="sub-tab-btn" onclick="showSub('ra','ra4')">4. Modèles américains</button>
-    <button class="sub-tab-btn" onclick="showSub('ra','ra5')">5. Déradicalisation</button>
+    <button class="sub-tab-btn active" onclick="showSub('ra','ra1',this)">1. Définitions & débats</button>
+    <button class="sub-tab-btn" onclick="showSub('ra','ra2',this)">2. Thèses explicatives</button>
+    <button class="sub-tab-btn" onclick="showSub('ra','ra3',this)">3. Enquêtes & profils</button>
+    <button class="sub-tab-btn" onclick="showSub('ra','ra4',this)">4. Modèles américains</button>
+    <button class="sub-tab-btn" onclick="showSub('ra','ra5',this)">5. Déradicalisation</button>
   </div>
 
   <!-- RA1 -->
@@ -1222,8 +1262,8 @@
   <h2>⚖️ TD5 — Évolution des réactions sociales et pénales face au viol et aux violences conjugales</h2>
 
   <div class="sub-tab-bar">
-    <button class="sub-tab-btn active" onclick="showSub('vi','vi1')">1. Représentations sociales & histoire</button>
-    <button class="sub-tab-btn" onclick="showSub('vi','vi2')">2. Le procès d'Aix & évolution juridique</button>
+    <button class="sub-tab-btn active" onclick="showSub('vi','vi1',this)">1. Représentations sociales & histoire</button>
+    <button class="sub-tab-btn" onclick="showSub('vi','vi2',this)">2. Le procès d'Aix & évolution juridique</button>
   </div>
 
   <!-- VI1 -->
@@ -1451,6 +1491,73 @@
     </div>
   </div>
 
+  <!-- SUJET DEC 2025 -->
+  <div class="annale-card">
+    <div class="session-label">Sujet — Décembre 2025 — Tostain</div>
+    <h3 style="margin-top:0;color:var(--peach-deep)">Sujet génocide</h3>
+    <div class="question-text">
+      Après avoir défini brièvement ce qu'on entend par génocide, évoquez de façon argumentée et réflexive (et pas seulement descriptive) les facteurs qui y conduisent. Vous illustrerez votre propos en vous appuyant sur des événements historiques et/ou contemporains. Vous pouvez vous référer aussi bien aux éléments du cours et des TD qu'à vos propres connaissances et réflexions. Vous serez attentif à situer et à articuler les niveaux d'analyses. Vous conclurez sur la part ou non d'inexplicable dans ces dynamiques génocidaires.
+    </div>
+    <button class="answer-toggle" onclick="toggleAnswer(this)">📖 Voir le plan type & éléments de réponse</button>
+    <div class="answer-text">
+
+      <h4>🔑 Ce que le sujet exige — points de vigilance</h4>
+      <ul>
+        <li><strong>Argumenté et réflexif, pas descriptif :</strong> ne pas juste lister les faits du Rwanda. Analyser, mettre en tension, questionner.</li>
+        <li><strong>Articuler les niveaux d'analyse :</strong> macro (international, État), méso (groupes, idéologie), micro (individu). Montrer comment ils s'articulent entre eux — pas des cases séparées.</li>
+        <li><strong>La conclusion sur l'inexplicable est exigée :</strong> ne pas l'esquiver. Prendre position.</li>
+        <li>Illustrer avec <strong>plusieurs exemples</strong> (Rwanda mais aussi Shoah, Bosnie/Srebrenica, Holodomor, etc.)</li>
+      </ul>
+
+      <h4>Introduction</h4>
+      <p><strong>Définition de Lemkin (1948) :</strong> génocide = l'un quelconque des actes suivants commis dans l'intention de détruire, en tout ou en partie, un groupe national, ethnique, racial ou religieux : meurtres de membres du groupe, atteintes graves à l'intégrité physique ou mentale, mesures visant à entraver les naissances, transfert forcé d'enfants. <em>L'intention de détruire</em> est l'élément central — il n'est pas nécessaire que le massacre soit achevé.</p>
+      <p>Poser la question : comment des individus ordinaires, des groupes entiers, en viennent-ils à organiser et à perpétrer de telles atrocités ? Annoncer que la réponse exige une approche <strong>transdisciplinaire et multi-niveaux</strong> (Semelin, 2003).</p>
+
+      <h4>I — Les facteurs structurels et historiques (niveau macro)</h4>
+      <p><em>Argumenter : les génocides ne surgissent pas de nulle part — ils s'inscrivent dans une histoire longue.</em></p>
+      <ul>
+        <li><strong>Construction et rigidification des identités de groupe :</strong> la colonisation belge au Rwanda transforme une distinction sociale fluide (Hutu/Tutsi) en catégorie raciale figée — essentialisation, frontières imperméables. Sans cette racialisation, le génocide de 1994 n'aurait pas eu la même forme.</li>
+        <li><strong>Histoire des dominations et des renversements :</strong> l'inversion de l'asymétrie (Hutus au pouvoir après l'indépendance 1962), les exils, la formation du FPR — chaque épisode alimente un ressentiment et une mémoire collective exploitable.</li>
+        <li><strong>État fragilisé et pouvoir menacé :</strong> paradoxe de Semelin — les génocides sont souvent perpétrés par des États en difficulté (Habyarimana acculé aux compromis, peur de perdre le pouvoir). La Solution finale décidée en janvier 1942 alors que le Reich nazi craint de perdre contre les bolcheviques. Un état fort n'a pas besoin de génocide ; c'est la fragilité qui génère la violence radicale.</li>
+        <li><strong>Passivité ou complicité de la communauté internationale :</strong> la souveraineté des États freine l'intervention. France au Rwanda (rapport Duclert : responsabilité lourde et accablante). L'ONU au moment de Srebrenica (1995). Cette impunité est un signal envoyé aux génocidaires.</li>
+      </ul>
+
+      <h4>II — Les facteurs idéologiques et groupaux (niveau méso)</h4>
+      <p><em>Argumenter : le génocide est d'abord un processus mental avant d'être un acte physique (Semelin).</em></p>
+      <ul>
+        <li><strong>La construction de l'ennemi — deux figures :</strong> ennemi intérieur (suspect, traître — cf. Anatole France, <em>Les Dieux ont soif</em>) et ennemi extérieur (étranger menaçant). La déshumanisation/animalisation (les Tutsis appelés « cancrelats ») prépare mentalement le passage à l'acte.</li>
+        <li><strong>La propagande en miroir :</strong> accuser les autres de ce qu'on va leur faire. « Les Tutsis vont nous exterminer, exterminons-les avant. » RTLM au Rwanda, discours nazi. Crée un sentiment de légitime défense qui autorise le meurtre.</li>
+        <li><strong>Le modèle « Making a Virtue of Evil » (Reicher, Haslam & Rath, 2008) :</strong> 5 étapes — identification au groupe, exclusion, perception du hors-groupe comme menace, représentation du groupe comme seul vertueux, faire du mal une vertu. Les atrocités sont perpétrées <em>au nom du bien</em>. « La vertu sans terreur est fatale » (Robespierre). Ce modèle montre que les acteurs font des <strong>choix actifs</strong> — pas seulement de la passivité.</li>
+        <li><strong>Les entrepreneurs identitaires (Semelin) :</strong> intellectuels, politiques, médias qui construisent et diffusent le discours de haine. Le génocide se prépare sur un plan idéologique <em>avant</em> d'être opérationnel. Distinction entre les niveaux d'acteurs : État → entrepreneurs identitaires → acteurs nationaux → acteurs locaux → opinion publique (au moins attentiste).</li>
+        <li><strong>Organisation pratique :</strong> milices Interahamwe (1992), distribution de machettes, Hutu Power (1993), listes de cibles, culture de l'impunité (punis pour vol de vache mais pas pour meurtre). Tout était prêt avant l'étincelle du 6 avril 1994.</li>
+      </ul>
+
+      <h4>III — Les facteurs psychologiques individuels (niveau micro)</h4>
+      <p><em>Argumenter : comment des individus « ordinaires » passent-ils à l'acte ? Le débat monstres ordinaires / bourreaux volontaires.</em></p>
+      <ul>
+        <li><strong>La thèse du monstre ordinaire (Arendt, Browning) :</strong> mécanismes situationnels — effet de surprise (pas le temps de réfléchir), soumission à l'autorité légitime (cf. Milgram), conformisme et esprit de corps, engrenage progressif. Malaise physique réel (vomissements chez les membres du 101ème bataillon) surmonté par des mécanismes de défense : évitement de la responsabilité, réinterprétation de la réalité, inversion des valeurs. Arendt : <em>camisole de la logique</em> — on suit les conséquences d'une prémisse idéologique sans la questionner.</li>
+        <li><strong>Désengagement moral (Bandura) :</strong> neutralisation des propres standards moraux — justification morale, euphémisation du langage (Eichmann « résoudre le problème »), déplacement de responsabilité, déshumanisation de la victime.</li>
+        <li><strong>La thèse du bourreau volontaire (Goldhagen) :</strong> antisémitisme d'élimination ancré, choix actifs, initiatives et enthousiasme. Eichmann harcèle ses supérieurs pour en faire plus. La responsabilité individuelle est entière.</li>
+        <li><strong>L'apport de la réflexion sur la cruauté :</strong> sadisme existentiel — jouissance de la toute-puissance sur l'autre, négation radicale. Génocide business — dimension utilitariste (récupération des biens). Ces motivations <em>plurielles</em> complexifient le profil du génocidaire.</li>
+        <li><strong>La résonance entre les deux thèses :</strong> ni pure situation ni pure intention — approche interactionniste. La personne et la situation se transforment mutuellement. Le groupe est l'opérateur de base : efficacité de l'action collective, mise en état psychique du génocidaire.</li>
+      </ul>
+
+      <h4>Conclusion — La part d'inexplicable</h4>
+      <p><em>Ne pas esquiver : prendre position.</em></p>
+      <p><strong>Ce qui est explicable :</strong> l'approche transdisciplinaire et multi-niveaux permet de reconstituer les processus — historiques, idéologiques, situationnels, psychologiques. On peut comprendre <em>comment</em> des génocides se produisent, quelles conditions les rendent possibles, quels mécanismes permettent à des individus ordinaires de commettre l'irréparable.</p>
+      <p><strong>La part d'inexplicable qui demeure :</strong></p>
+      <ul>
+        <li>La <strong>sidération morale</strong> (Semelin) : la barbarie des massacres — tuer ses voisins, ses proches, des enfants — heurte quelque chose de fondamental dans notre conception de l'humanité. Même après explication, quelque chose résiste à la compréhension rationnelle.</li>
+        <li>Lanzmann : « Entre l'acte de vouloir tuer et l'acte de tuer, il y a un abîme. » Aucune théorie ne comble entièrement cet abîme.</li>
+        <li>La <strong>variabilité interindividuelle</strong> : à conditions identiques, certains refusent (les Justes, les 10-20% du 101ème bataillon). Pourquoi eux et pas les autres ? Le déterminisme n'est jamais total.</li>
+        <li>Cependant, affirmer que c'est « inexplicable » risque de <strong>dédouaner les responsables</strong> et de rendre la prévention impossible. L'inexplicable ne doit pas servir de béquille métaphysique (Bauman) — il faut maintenir la <strong>responsabilité individuelle</strong> (Arendt : ils ont fait le choix de démissionner de leur humanité) tout en reconnaissant la puissance des dynamiques collectives.</li>
+      </ul>
+      <p>→ Ouverture : si on peut <em>expliquer</em> sans <em>comprendre</em> totalement, l'enjeu est de transformer cette connaissance en <strong>outils de prévention</strong> — éducation critique aux mécanismes de déshumanisation, vigilance aux discours d'entrepreneurs identitaires, renforcement des institutions internationales.</p>
+
+      <div class="note">💡 <strong>Références clés pour ce sujet :</strong> Lemkin (définition) · Semelin (2003, transdisciplinaire, 3 dimensions, niveaux d'acteurs) · Browning (1996, 101ème bataillon) · Arendt (banalité du mal, camisole de la logique, responsabilité) · Goldhagen (1996, bourreaux volontaires) · Reicher, Haslam & Rath (2008, making a virtue of evil) · Bandura (désengagement moral) · Milgram (soumission) · Zimbardo (pente fatale) · Bauman (béquille métaphysique) · Lanzmann (l'abîme) · Cas : Rwanda (RTLM, Interahamwe, FPR, Duclert) · Shoah (101ème bataillon, Eichmann) · Srebrenica · Holodomor</div>
+    </div>
+  </div>
+
   <!-- CHECKLIST -->
   <div class="annale-card" style="border-top-color:var(--mint-deep)">
     <div class="session-label" style="color:var(--mint-deep)">Checklist incontournable pour toute copie Tostain</div>
@@ -1473,26 +1580,37 @@
 </div>
 
 <script>
-  function showTab(name) {
-    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  function showTab(name, btn) {
+    document.querySelectorAll('.tab-content').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
     document.getElementById('tab-' + name).classList.add('active');
-    event.currentTarget.classList.add('active');
+    if (btn) btn.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  function showSub(prefix, name) {
-    const parent = document.getElementById('tab-' + prefix);
-    parent.querySelectorAll('.sub-content').forEach(t => t.classList.remove('active'));
-    parent.querySelectorAll('.sub-tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById(prefix + '-' + name).classList.add('active');
-    event.currentTarget.classList.add('active');
+  // Map short prefixes to full tab IDs
+  var prefixMap = {
+    'ty': 'tyrannie',
+    'ai': 'aide',
+    'ge': 'td-genocides',
+    'ra': 'td-radicalisation',
+    'vi': 'td-viol'
+  };
+  function showSub(prefix, name, btn) {
+    var tabId = prefixMap[prefix] || prefix;
+    var parent = document.getElementById('tab-' + tabId);
+    if (!parent) { console.error('Tab not found: tab-' + tabId); return; }
+    parent.querySelectorAll('.sub-content').forEach(function(t){ t.classList.remove('active'); });
+    parent.querySelectorAll('.sub-tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    var subEl = document.getElementById(prefix + '-' + name);
+    if (subEl) subEl.classList.add('active');
+    if (btn) btn.classList.add('active');
   }
   function toggleAcc(btn) {
     btn.classList.toggle('open');
     btn.nextElementSibling.classList.toggle('open');
   }
   function toggleAnswer(btn) {
-    const ans = btn.nextElementSibling;
+    var ans = btn.nextElementSibling;
     ans.classList.toggle('open');
     btn.textContent = ans.classList.contains('open') ? '🙈 Masquer la réponse' : '📖 Voir le plan type & éléments de réponse';
   }
