@@ -178,7 +178,6 @@
   <button class="tab-btn" onclick="showTab('td-viol',this)">⚖️ TD Viol & Violences</button>
   <button class="tab-btn" onclick="showTab('syntheses',this)">🔗 Synthèses transversales</button>
   <button class="tab-btn" onclick="showTab('annales',this)">📝 Annales</button>
-  <button class="tab-btn" onclick="showTab('fiches',this)">🗂️ Fiches Portes d'entrée</button>
 </div>
 
 <!-- ==================== INTRODUCTION ==================== -->
@@ -1364,362 +1363,367 @@
 
 <!-- ==================== ANNALES ==================== -->
 <div id="tab-syntheses" class="tab-content">
-<h2>🔗 Synthèses transversales — Penser comme le correcteur</h2>
+<h2>🔗 Synthèses — Que mettre selon le sujet ?</h2>
 
-<div class="narrative">
-  <strong>Pourquoi cet onglet ?</strong> Les partiels ne te demandent jamais "parle-moi du CM" ou "parle-moi du TD Rwanda". Ils posent des <em>questions transversales</em> qui attendent que tu croises tous les outils ensemble. La tyrannie, les génocides, la radicalisation, l'absence d'aide — ce ne sont pas des sujets séparés. Ce sont des <em>manifestations différentes des mêmes mécanismes psychosociaux</em>.<br><br>
-  Cet onglet te montre les <strong>4 grandes questions</strong> que Tostain pose vraiment, comment les concepts s'articulent entre eux, et à quoi ressemble une réponse correcte.
+<div class="card lavender" style="margin-bottom:18px">
+  <p>Une entrée par sujet d'exam. Chaque fiche = tout ce que tu dois sortir si ce thème tombe : théorie du CM, exemples des TD, plan rédigé, références, liens avec les autres thèmes. Rien à chercher ailleurs.</p>
 </div>
 
 <div class="sub-tab-bar">
-  <button class="sub-tab-btn active" onclick="showSub('sy','sy1',this)">🧠 Thème 1 — Individus ordinaires & atrocités</button>
-  <button class="sub-tab-btn" onclick="showSub('sy','sy2',this)">👥 Thème 2 — Groupe : frein ou moteur ?</button>
-  <button class="sub-tab-btn" onclick="showSub('sy','sy3',this)">🔥 Thème 3 — Idéologie & basculement</button>
-  <button class="sub-tab-btn" onclick="showSub('sy','sy4',this)">⚖️ Thème 4 — Déviance & normes sociales</button>
+  <button class="sub-tab-btn active" onclick="showSub('sy','ge',this)">🌍 Génocides</button>
+  <button class="sub-tab-btn" onclick="showSub('sy','ty',this)">⚖️ Tyrannie</button>
+  <button class="sub-tab-btn" onclick="showSub('sy','ai',this)">🤝 Absence d'aide</button>
+  <button class="sub-tab-btn" onclick="showSub('sy','ra',this)">🔥 Radicalisation</button>
+  <button class="sub-tab-btn" onclick="showSub('sy','vi',this)">🏛️ Viol & Violences</button>
+  <button class="sub-tab-btn" onclick="showSub('sy','dev',this)">🌀 Déviance</button>
+  <button class="sub-tab-btn" onclick="showSub('sy','croises',this)">🔗 Comparer X et Y</button>
 </div>
 
-<!-- ===== THÈME 1 ===== -->
-<div id="sy-sy1" class="sub-content active">
-<h2>🧠 Thème 1 — Comment des individus ordinaires en viennent-ils à commettre des atrocités ?</h2>
+<!-- ======== GÉNOCIDES ======== -->
+<div id="sy-ge" class="sub-content active">
+<h2>🌍 Génocides — Que mettre si ce thème tombe ?</h2>
 
-<div class="narrative">
-  <strong>C'est LA question centrale du cours.</strong> Elle traverse absolument tout : la tyrannie (les gardiens de Stanford), les génocides (les soldats du 101ème bataillon, les génocidaires rwandais), la Zone Extrême (les participants qui administrent des chocs électriques). À chaque fois, des gens normaux font des choses monstrueuses. Pourquoi ?<br><br>
-  La réponse de Tostain n'est jamais simple. Il y a deux grandes thèses en tension, et la vérité est dans leur articulation.
-</div>
-
-<h3>La carte mentale du thème</h3>
-<div class="key-box">
-  <p><strong>Question :</strong> "Comment des individus ordinaires en viennent-ils à commettre des atrocités ?"</p>
-  <div class="two-col">
-    <div>
-      <h4>Thèse A — Le monstre ordinaire (situation)</h4>
-      <p>C'est la <em>situation</em> qui produit les comportements atroces. N'importe qui, placé dans les bonnes/mauvaises conditions, peut basculer.</p>
-      <ul>
-        <li>Browning (1992) — 101ème bataillon : hommes ordinaires, 4 mécanismes</li>
-        <li>Arendt — banalité du mal, camisole de la logique</li>
-        <li>Milgram — soumission à l'autorité légitime, état agentique</li>
-        <li>Zimbardo — pente fatale, 6 facteurs (mais critiqué par Le Texier)</li>
-        <li>Bandura — désengagement moral</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Thèse B — Le bourreau volontaire (intention)</h4>
-      <p>C'est le <em>choix</em> et l'<em>idéologie</em> qui produisent les atrocités. Les acteurs sont responsables, actifs, motivés.</p>
-      <ul>
-        <li>Goldhagen (1996) — antisémitisme d'élimination volontaire</li>
-        <li>Reicher, Haslam & Rath (2008) — faire du mal une vertu, 5 étapes</li>
-        <li>Cesarani, Prazan, Wieviorka — confirmation de l'intentionnalisme</li>
-      </ul>
-    </div>
-  </div>
-  <div class="note">→ <strong>La synthèse de Tostain :</strong> ni l'une ni l'autre seule. Approche <strong>interactionniste</strong> — la personne et la situation se transforment mutuellement. La résonance entre endo et exogroupe (Reicher & Haslam) explique comment les deux thèses s'articulent.</div>
-</div>
-
-<h3>Les ponts entre CM et TD</h3>
-<table class="schema">
-  <tr><th>Mécanisme</th><th>Où en CM ?</th><th>Où en TD ?</th></tr>
-  <tr><td>Soumission à l'autorité</td><td>Browning (Trapp), Milgram, Zimbardo</td><td>Rwanda (obéissance aux chefs Hutu), Zone Extrême (TD4)</td></tr>
-  <tr><td>Conformisme de groupe</td><td>101ème bataillon (esprit de corps), BBC Prison Study</td><td>Interahamwe (milices de jeunes), génocide rwandais</td></tr>
-  <tr><td>Déshumanisation</td><td>Mécanisme de défense (101ème bataillon), banalité du mal</td><td>Cancrelats (Rwanda), propagande en miroir</td></tr>
-  <tr><td>Engrenage progressif</td><td>4ème raison de Browning, pente fatale Zimbardo</td><td>Culture de l'impunité (Rwanda), massacres localisés de 1992</td></tr>
-  <tr><td>Désengagement moral</td><td>Bandura (justification morale, euphémisation)</td><td>Génocide business (Rwanda), sadisme existentiel</td></tr>
-  <tr><td>Faire du mal une vertu</td><td>Reicher, Haslam & Rath — 5 étapes</td><td>Rwanda (défendre les Hutus), radicalisation djihadiste (TD3)</td></tr>
-</table>
-
-<h3>Ce que le correcteur attend — Exemple de question</h3>
-<div class="card peach">
-  <p><em>"À partir des cadres d'analyse vus en cours, expliquez comment des individus ordinaires peuvent en venir à commettre des violences de masse."</em></p>
-</div>
-
-<div class="card white">
-  <h4>Comment construire ta réponse — le plan qui fonctionne</h4>
-  <ol>
-    <li><strong>Poser le paradoxe</strong> (introduction) : ces individus ne sont pas des monstres, des sadiques ou des malades. Ce sont des gens normaux. C'est ça qui est dérangeant — et c'est là que la psychologie sociale apporte quelque chose que ni le sens commun ni la psychologie clinique ne peuvent expliquer.</li>
-    <li><strong>Les mécanismes situationnels</strong> (monstre ordinaire) : surprise, autorité, groupe, engrenage → mécanismes de défense → désengagement moral. <em>Illustrer</em> avec le 101ème bataillon ET la Zone Extrême ET la Stanford Prison Experiment (en mentionnant ses limites).</li>
-    <li><strong>La limite : les choix actifs</strong> (bourreau volontaire) : Goldhagen, Reicher et al. — certains adhèrent activement, prennent des initiatives, célèbrent. <em>Illustrer</em> avec Eichmann qui harcèle ses supérieurs, les génocidaires rwandais enthousiastes.</li>
-    <li><strong>La synthèse interactionniste</strong> : ni pur situationnel, ni pur intentionnel. La situation et la personne se transforment mutuellement. Le groupe est l'opérateur clé.</li>
-    <li><strong>Conclusion</strong> : la responsabilité individuelle reste entière (Arendt) — comprendre n'est pas excuser. Et comprendre permet de prévenir.</li>
-  </ol>
-</div>
-
-<h3>Extrait de réponse rédigée — Pour voir à quoi ça ressemble</h3>
-<div class="card lavender">
-  <p>La psychologie sociale de Tostain s'ouvre sur un paradoxe fondamental : comment des individus sans pathologie particulière, sans sadisme préexistant, peuvent-ils commettre des atrocités de masse ? Le 101ème bataillon de réserve de police allemande, étudié par Browning (1992), en offre une illustration saisissante. Ces hommes — trop âgés pour le front, peu nazifiés, enrôlés de force — massacreront 38 000 Juifs en 14 mois en Pologne. Leur commandant, le Major Wilhelm Trapp, leur laisse pourtant explicitement le choix de refuser. Une douzaine d'hommes refusent le premier jour, sans sanction. Pourtant 488 participent.</p>
-  <p>Pour Browning, quatre mécanismes situationnels expliquent ce basculement : l'effet de surprise (pas de temps pour réfléchir), la soumission à une autorité jugée légitime (proche de l'état agentique de Milgram, 1974), la dynamique de groupe (conformisme, esprit de corps — ne pas "se décharger" sur ses camarades), et l'engrenage progressif (renoncer serait admettre que tout était pour rien). À ces mécanismes s'ajoutent des stratégies psychologiques pour rendre vivable ce qui est invivable : évitement de la responsabilité ("je n'ai pas le choix"), réinterprétation de la réalité (construction d'une haine a posteriori pour les victimes), inversion des valeurs morales (ceux qui refusent deviennent des lâches). Arendt nomme ce processus la "banalité du mal" — le mal s'inscrit dans des activités routinières et bureaucratiques, chez des individus qui ont renoncé à leur pouvoir de penser. La "camisole de la logique" : on adopte une prémisse idéologique sans jamais la questionner et on en déroule les conséquences.</p>
-  <p>Cette explication situationnelle a cependant ses limites. Goldhagen (1996), dans sa réponse directe à Browning, montre que certains membres du même bataillon prenaient des initiatives, étaient enthousiastes, harcelaient leurs supérieurs pour en faire toujours plus. Ce ne sont pas des victimes passives de la situation — ce sont des bourreaux volontaires, animés par un antisémitisme d'élimination ancré culturellement. Reicher, Haslam et Rath (2008) théorisent ce phénomène : l'inhumanité ne se fait pas passivement, elle résulte de choix actifs. Les acteurs en viennent à <em>célébrer</em> leurs atrocités comme des vertus — défense de leur groupe, de leur race, de leur culture. On fait toujours le mal au nom du bien.</p>
-  <p>La réponse de Tostain est interactionniste : ni pure situation ni pure intention. La personne et la situation se transforment mutuellement — et c'est précisément pour cela que l'approche interactionniste s'impose. Elle préserve également la question de la responsabilité : comprendre les mécanismes situationnels ne revient pas à absoudre les acteurs. Arendt le dit clairement — ils ont fait le choix de démissionner de leur humanité.</p>
-</div>
-</div><!-- sy1 -->
-
-<!-- ===== THÈME 2 ===== -->
-<div id="sy-sy2" class="sub-content">
-<h2>👥 Thème 2 — Le groupe : frein ou moteur des comportements problématiques ?</h2>
-
-<div class="narrative">
-  <strong>Ce thème surprend souvent :</strong> on pense spontanément que le groupe est dangereux — la foule, le conformisme, la pression des pairs. C'est une partie de la réponse (Milgram, Zimbardo, Asch). Mais la psychologie sociale montre que le groupe peut aussi être le principal <em>moteur de résistance</em>, de solidarité, d'aide.<br><br>
-  Ce thème traverse la tyrannie (BBC Prison Study : les détenus se révoltent grâce au groupe), l'absence d'aide (Levine : le groupe de femmes intervient plus que l'individu seul), et les génocides (le groupe est à la fois l'outil de la déshumanisation ET le moteur de la résistance des Justes).
-</div>
-
-<h3>La carte mentale du thème</h3>
-<div class="key-box">
-  <p><strong>Question :</strong> "Dans quelle mesure le groupe peut-il favoriser ou inhiber les comportements problématiques ?"</p>
-  <div class="two-col">
-    <div>
-      <h4>Le groupe comme danger</h4>
-      <ul>
-        <li>Conformisme (Asch) : pression vers la norme dominante, même erronée</li>
-        <li>Soumission à l'autorité (Milgram) : le groupe légitime l'autorité</li>
-        <li>Désindividuation (Zimbardo) : le costume, le rôle effacent l'individu</li>
-        <li>Dilution de responsabilité (Darley & Latané) : plus on est nombreux, moins on se sent responsable</li>
-        <li>Ignorance plurielle : chacun se fie à l'inaction des autres pour interpréter la situation</li>
-        <li>Groupe opérateur du génocide : efficacité collective, mise en état psychique du génocidaire (Semelin)</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Le groupe comme protection</h4>
-      <ul>
-        <li>Identité sociale partagée → intervention accrue (Levine & Crowther) : femmes unisexe 75 %</li>
-        <li>Contre-effet témoin : si victime endogroupe, plus de témoins = plus d'aide</li>
-        <li>BBC Prison Study : les détenus <em>résistent</em> grâce à leur cohésion de groupe</li>
-        <li>Théorie de l'identité sociale (Tajfel) : le groupe permet la contestation collective si frontières imperméables + illégitimité</li>
-        <li>Les Justes dans les génocides : la résistance passe aussi par le groupe</li>
-        <li>Support social en situation d'urgence : plus on est nombreux, plus on peut se soutenir pour agir (Levine 2020)</li>
-      </ul>
-    </div>
-  </div>
-  <div class="note">→ <strong>La clé :</strong> tout dépend du <em>type d'appartenance groupale</em> et de la <em>relation entre les groupes</em>. Un groupe soudé autour d'une identité partagée avec la victime est un moteur d'aide. Un groupe anonyme sans lien avec la victime est un frein.</div>
-</div>
-
-<h3>Les ponts entre CM et TD</h3>
-<table class="schema">
-  <tr><th>Mécanisme de groupe</th><th>Où en CM ?</th><th>Où en TD ?</th></tr>
-  <tr><td>Conformisme et pression du groupe</td><td>101ème bataillon (esprit de corps, ne pas se décharger), Asch</td><td>Interahamwe (embrigadement), Zone Extrême (public présent)</td></tr>
-  <tr><td>Identité sociale et résistance</td><td>BBC Prison Study — détenus se révoltent grâce au groupe</td><td>Résistance des Hutus modérés, Justes rwandais</td></tr>
-  <tr><td>Dilution de responsabilité</td><td>Darley & Latané (épilepsie, Lady in Distress), INSEE fratrie</td><td>Passivité des voisins (Rwanda, Genovese)</td></tr>
-  <tr><td>Contre-effet témoin</td><td>Levine & Crowther (2008), Fisher méta-analyse</td><td>Témoins en situation réelle (Levine 2020, vidéos)</td></tr>
-  <tr><td>Effondrement du collectif → tyrannie</td><td>BBC Prison Study (phase 2 : nouveau régime tyrannique)</td><td>Rwanda : impuissance de l'opposition modérée</td></tr>
-  <tr><td>Group opérateur génocide</td><td>Semelin : groupe = cheville ouvrière entre État et population</td><td>Interahamwe, RTLM comme opérateur idéologique</td></tr>
-</table>
-
-<h3>Ce que le correcteur attend — Exemple de question</h3>
-<div class="card peach">
-  <p><em>"À partir des recherches en psychologie sociale sur les dynamiques de groupe, expliquez dans quelle mesure le groupe peut constituer un facteur de risque ou de protection dans les comportements sociaux."</em></p>
-</div>
-<div class="card white">
-  <h4>Le plan qui fonctionne</h4>
-  <ol>
-    <li><strong>Paradoxe de départ :</strong> on associe intuitivement le groupe à la dangerosité (pression, conformisme). Mais c'est plus complexe.</li>
-    <li><strong>Partie I — Le groupe comme facteur de risque :</strong> dilution de responsabilité (Darley & Latané), conformisme (Asch), désindividuation (Zimbardo — critiqué par Le Texier), ignorance plurielle. Exemples : l'effet spectateur, le 101ème bataillon, les Interahamwe.</li>
-    <li><strong>Partie II — Le groupe comme facteur de protection :</strong> identité sociale partagée → contre-effet témoin (Levine & Crowther), BBC Prison Study, méta-analyse Fisher (urgence réelle). Exemples : femmes unisexe 75 % d'intervention, détenus BBC qui se révoltent.</li>
-    <li><strong>Partie III — Ce qui détermine lequel des deux :</strong> nature de l'appartenance groupale, relation entre les groupes (Tajfel : perméabilité, légitimité, alternatives cognitives). Le groupe est un outil — son effet dépend de qui l'utilise et dans quel contexte.</li>
-    <li><strong>Conclusion :</strong> le groupe n'est ni intrinsèquement bon ni mauvais — c'est l'approche interactionniste appliquée aux dynamiques collectives.</li>
-  </ol>
-</div>
-</div><!-- sy2 -->
-
-<!-- ===== THÈME 3 ===== -->
-<div id="sy-sy3" class="sub-content">
-<h2>🔥 Thème 3 — Comment et pourquoi des individus basculent-ils dans des idéologies extrêmes ?</h2>
-
-<div class="narrative">
-  <strong>Ce thème connecte ce qui semble le plus éloigné :</strong> les génocides (TD Rwanda), la radicalisation (TD3), et les mécanismes psychologiques du CM (désengagement moral, banalité du mal, Making a Virtue of Evil).<br><br>
-  En réalité, le génocide et la radicalisation djihadiste partagent les mêmes mécanismes fondamentaux : désignation d'un bouc émissaire, déshumanisation de l'ennemi, propagande qui crée un sentiment de menace, idéologie qui fait du mal une vertu, groupe comme opérateur du passage à l'acte. La différence est dans le contexte historique et culturel — pas dans la psychologie de base.
-</div>
-
-<h3>La carte mentale du thème</h3>
-<div class="key-box">
-  <p><strong>Question :</strong> "Quels facteurs conduisent des individus à adopter et à agir selon des idéologies extrêmes ?"</p>
-  <div class="three-col">
-    <div class="card white">
-      <h4>Niveau macro</h4>
-      <p>Contexte historique, politique, international.</p>
-      <ul>
-        <li>Colonisation et racialisation (Rwanda → Semelin)</li>
-        <li>État fragilisé qui instrumentalise les tensions (Habyarimana → TD1)</li>
-        <li>Injustices perçues, oppressions réelles ou construites (Burgat → TD3)</li>
-        <li>Passivité internationale (France Rwanda, ONU Srebrenica)</li>
-      </ul>
-    </div>
-    <div class="card white">
-      <h4>Niveau méso</h4>
-      <p>Groupes, idéologies, dynamiques collectives.</p>
-      <ul>
-        <li>Construction de l'ennemi (deux figures — Semelin)</li>
-        <li>Propagande en miroir, déshumanisation (RTLM)</li>
-        <li>Making a Virtue of Evil — 5 étapes (Reicher et al.)</li>
-        <li>Entrepreneurs identitaires</li>
-        <li>Radicalisation normative vs contre-normative (Crettiez)</li>
-        <li>Polarisation du groupe (Moscovici)</li>
-      </ul>
-    </div>
-    <div class="card white">
-      <h4>Niveau micro</h4>
-      <p>Psychologie individuelle, trajectoire personnelle.</p>
-      <ul>
-        <li>Besoin de sens et de rigidité cognitive (Roy, modèles américains)</li>
-        <li>Fragilité identitaire, manque de dignité</li>
-        <li>Désengagement moral (Bandura)</li>
-        <li>Banalité du mal — camisole de la logique (Arendt)</li>
-        <li>Engrenage progressif (Browning, Moghaddam — staircases)</li>
-        <li>Subjectivation (Ferret) — même facteurs, effets différents selon les individus</li>
-      </ul>
-    </div>
-  </div>
-  <div class="note">→ <strong>Ce qui relie génocide et radicalisation :</strong> dans les deux cas, on ne comprend pas en regardant seulement un niveau. La réponse est toujours la même : il faut articuler les trois niveaux. Et dans les deux cas, la responsabilité individuelle reste entière même si les mécanismes collectifs sont puissants.</div>
-</div>
-
-<h3>Tableau de convergence — Génocide Rwanda vs Radicalisation djihadiste</h3>
-<table class="schema">
-  <tr><th>Mécanisme</th><th>Rwanda (TD1-2)</th><th>Radicalisation djihadiste (TD3)</th></tr>
-  <tr><td><strong>Sentiment de menace existentielle</strong></td><td>"Les Tutsis vont nous exterminer" — propagande RTLM</td><td>"L'Occident opprime les musulmans" — thèse Burgat, choc moral</td></tr>
-  <tr><td><strong>Déshumanisation de l'ennemi</strong></td><td>"Cancrelats" (inyenzi) — animalisation des Tutsis</td><td>"Mécréants", ennemis de Dieu — déshumanisation religieuse</td></tr>
-  <tr><td><strong>Propagande en miroir</strong></td><td>"Ils vont nous tuer, tuons-les avant" — légitime défense</td><td>"Défense de l'islam contre l'agression occidentale"</td></tr>
-  <tr><td><strong>Le groupe comme opérateur</strong></td><td>Interahamwe — efficacité, mise en état psychique</td><td>Groupe de pairs, groupe terroriste — fraternité, engagement</td></tr>
-  <tr><td><strong>Faire du mal une vertu</strong></td><td>Génocide présenté comme autodéfense légitime</td><td>Attentat présenté comme acte héroïque pour Dieu</td></tr>
-  <tr><td><strong>Engrenage progressif</strong></td><td>Massacres localisés 1992 → génocide 1994, culture de l'impunité</td><td>Radicalisation des opinions → engagement → passage à l'acte violent</td></tr>
-  <tr><td><strong>Entrepreneurs identitaires</strong></td><td>Habyarimana, intellectuels Hutu Power, RTLM</td><td>Prédicateurs salafistes, recruteurs en ligne</td></tr>
-  <tr><td><strong>Responsabilité individuelle</strong></td><td>Bourreaux volontaires (Goldhagen) + monstres ordinaires (Browning)</td><td>Choix actifs (Roy : islamisation de la radicalité) + pression situationnelle</td></tr>
-</table>
-
-<h3>Ce que le correcteur attend — Exemple de question</h3>
-<div class="card peach">
-  <p><em>"En vous appuyant sur les recherches vues en cours et en TD, expliquez les processus par lesquels des individus en viennent à légitimer et à commettre des actes de violence collective."</em></p>
-</div>
-<div class="card white">
-  <h4>Le plan qui fonctionne</h4>
-  <ol>
-    <li><strong>Introduction :</strong> poser la question de la légitimation — avant le passage à l'acte, il y a un travail idéologique et psychologique de construction du sens. Annoncer les trois niveaux.</li>
-    <li><strong>Partie I — Construction idéologique collective :</strong> Making a Virtue of Evil (5 étapes), propagande en miroir, déshumanisation. Exemples : Rwanda (RTLM, cancrelats) ET radicalisation (discours salafiste, sentiment de menace).</li>
-    <li><strong>Partie II — Mécanismes psychologiques individuels :</strong> désengagement moral (Bandura), banalité du mal (Arendt), engrenage (Browning). Le groupe comme opérateur du passage à l'acte. Exemples : 101ème bataillon ET trajectoire du radicalisé (Moghaddam — staircases).</li>
-    <li><strong>Partie III — Ce qui détermine la variabilité :</strong> pourquoi certains refusent (les Justes, les 10-20% du 101ème) ? Hypothèse indéterministe de Ferret, approche interactionniste. La subjectivation individuelle.</li>
-    <li><strong>Conclusion :</strong> responsabilité individuelle maintenue (Arendt, Goldhagen) + compréhension des mécanismes pour la prévention.</li>
-  </ol>
-</div>
-
-<h3>Extrait de réponse rédigée</h3>
-<div class="card lavender">
-  <p>La légitimation de la violence collective précède toujours le passage à l'acte. Semelin (2003) l'énonce clairement : un massacre, avant d'être un acte physique, est un processus mental. La vision de l'autre — construite, instrumentalisée, diffusée — justifie son élimination.</p>
-  <p>Au niveau collectif, ce processus suit une logique que Reicher, Haslam et Rath (2008) formalisent en cinq étapes : identification au groupe, exclusion de l'exogroupe, perception de la menace, représentation du groupe comme seul vertueux, puis faire du mal une vertu. Au Rwanda, cette progression est observable sur trente ans : la colonisation belge rigidifie les identités Hutu/Tutsi, Habyarimana instrumente la haine pour préserver son pouvoir, la radio RTLM diffuse en boucle la déshumanisation (les Tutsis appelés "cancrelats"), et l'argument de la légitime défense transforme les génocidaires en victimes qui se défendent. On retrouve la même logique dans la radicalisation djihadiste : la thèse de Burgat sur l'oppression des communautés musulmanes, la propagande en miroir ("ils nous attaquent, nous nous défendons"), le discours salafiste qui promet une vie vertueuse et une fraternité.</p>
-  <p>Au niveau individuel, le désengagement moral (Bandura, 1999) permet à chaque acteur de neutraliser ses propres standards éthiques : justification morale ("servir une noble cause"), euphémisation du langage (Eichmann parlant de "résoudre le problème"), déplacement de la responsabilité ("je n'obéis qu'aux ordres"). La "camisole de la logique" d'Arendt opère : une fois la prémisse idéologique acceptée sans questionnement, on en déroule les conséquences de façon mécanique.</p>
-  <p>Mais cette explication collective et situationnelle a ses limites. Goldhagen (1996) montre que certains acteurs sont des bourreaux volontaires — actifs, enthousiastes, prenant des initiatives. Et Ferret (2017) rappelle que deux individus exposés aux mêmes facteurs peuvent réagir différemment selon leur processus de subjectivation. La responsabilité individuelle reste entière.</p>
-</div>
-</div><!-- sy3 -->
-
-<!-- ===== THÈME 4 ===== -->
-<div id="sy-sy4" class="sub-content">
-<h2>⚖️ Thème 4 — La déviance : transgression morale ou conformité à d'autres normes ?</h2>
-
-<div class="narrative">
-  <strong>Ce thème est plus abstrait mais c'est celui qui a déjà été posé directement aux partiels (Sujet 2).</strong> L'idée centrale : ce qu'on appelle "déviance" n'est pas une transgression universelle — c'est toujours défini par rapport à un système de normes particulier. Et les comportements qu'on qualifie de "déviants" peuvent être parfaitement normaux dans un autre système de valeurs.<br><br>
-  Ça peut sembler philosophique, mais Tostain l'illustre avec des exemples très concrets : les soldats du 101ème bataillon ne violent pas leurs normes — ils les suivent (conformisme, obéissance, esprit de corps). Les génocidaires rwandais agissent "normalement" dans le cadre de leur système de valeurs instrumentalisé. Le radicalisé djihadiste se perçoit comme vertueux.<br><br>
-  Le TD Viol apporte une dimension supplémentaire : les normes sociales sur la violence sexuelle ont radicalement changé au fil du temps — ce qui était "normal" (le viol comme rapt d'honneur) est aujourd'hui criminel. La déviance est une construction historique.
-</div>
-
-<h3>La carte mentale du thème</h3>
-<div class="key-box">
-  <p><strong>Question :</strong> "Dans quelle mesure les comportements déviants relèvent-ils d'une transgression morale universelle plutôt que de systèmes normatifs particuliers ?"</p>
-  <div class="two-col">
-    <div>
-      <h4>Arguments contre la transgression universelle</h4>
-      <ul>
-        <li><strong>Relativisme historique :</strong> le viol comme rapt d'honneur (Ancien Régime, Vigarello) — la déviance change selon les époques</li>
-        <li><strong>Relativisme culturel :</strong> ce qui est criminel ici est valorisé ailleurs (ex. excision, lapidation)</li>
-        <li><strong>Le pouvoir définit la norme :</strong> c'est le groupe dominant qui décide ce qui est "déviant". La déviance peut être un outil de contrôle social.</li>
-        <li><strong>Pathologisation :</strong> réduire à une pathologie individuelle occulte les dimensions sociales et idéologiques</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Les comportements "déviants" comme conformité à d'autres normes</h4>
-      <ul>
-        <li><strong>Banalité du mal (Arendt) :</strong> Eichmann obéit à des normes bureaucratiques, pas à des normes de mal universel</li>
-        <li><strong>101ème bataillon (Browning) :</strong> conformisme, esprit de corps — les soldats suivent les normes de leur groupe</li>
-        <li><strong>Making a Virtue of Evil (Reicher et al.) :</strong> les atrocités sont perçues comme des vertus dans le système de valeurs du génocidaire</li>
-        <li><strong>Radicalisation (Ferret) :</strong> le radicalisé adhère à un système normatif alternatif cohérent</li>
-        <li><strong>Viol comme libertin (Ancien Régime) :</strong> les aristocrates ne se perçoivent pas comme des criminels — ils suivent des normes de classe</li>
-      </ul>
-    </div>
-  </div>
-  <div class="note">→ <strong>La tension à maintenir :</strong> reconnaître que la déviance est socialement construite ne signifie pas tomber dans le relativisme moral absolu. Arendt maintient que les acteurs sont responsables malgré les mécanismes situationnels. Comprendre n'est pas excuser — et certaines normes sont universellement indéfendables.</div>
-</div>
-
-<h3>Les ponts entre CM et TD</h3>
-<table class="schema">
-  <tr><th>Argument</th><th>Où en CM ?</th><th>Où en TD ?</th></tr>
-  <tr><td>La déviance comme construction sociale</td><td>Arendt (banalité du mal), Browning (conformisme)</td><td>Vigarello (viol comme rapt d'honneur, évolution historique)</td></tr>
-  <tr><td>Normes de groupe alternatives</td><td>Milgram (état agentique), BBC Prison Study (rôles)</td><td>Interahamwe (normes génocidaires), radicalisation normative (Crettiez)</td></tr>
-  <tr><td>Le pouvoir définit la norme</td><td>Zimbardo (gardiens vs détenus)</td><td>Avocates du procès d'Aix — "pas le procès de 3 violeurs mais le procès du viol"</td></tr>
-  <tr><td>Inversion des valeurs morales</td><td>3ème mécanisme de défense (101ème bataillon)</td><td>Rwanda : impunité du meurtre, punition du vol</td></tr>
-  <tr><td>Responsabilité maintenue</td><td>Arendt : "choix de démissionner de son humanité"</td><td>Goldhagen : bourreaux volontaires, responsabilité entière</td></tr>
-</table>
-
-<h3>Le TD Viol comme illustration parfaite de ce thème</h3>
 <div class="card rose">
-  <p>Le TD5 illustre mieux que tout autre comment les normes sociales sur un comportement violent évoluent et comment cette évolution modifie ce qui est qualifié de "déviant" :</p>
-  <ul>
-    <li><strong>Ancien Régime :</strong> le viol est un rapt d'honneur — c'est la réputation du <em>père</em> qui est lésée, pas l'intégrité de la femme. L'agresseur aristocrate ne se perçoit pas comme déviant : il agit selon les normes de sa classe (le libertinage comme jeu social).</li>
-    <li><strong>XIXème :</strong> le violeur devient un marginal pathologique (satyriasis) — la déviance est médicalisée, externalisée. La norme bourgeoise construit l'agresseur comme "autre", anormal.</li>
-    <li><strong>Aujourd'hui :</strong> le viol est le crime majeur. Cette hiérarchisation reflète un changement de valeurs : l'autonomie individuelle et l'intégrité physique sont devenues des valeurs centrales.</li>
-    <li><strong>Le débat sur le consentement (MacKinnon vs Le Magueresse) :</strong> même aujourd'hui, la définition juridique du viol est contestée — preuve que la construction normative est un processus permanent, pas un état stable.</li>
-  </ul>
+  <h4>🃏 En un coup d'œil</h4>
+  <div class="two-col">
+    <div>
+      <strong>Définition (Lemkin, 1944/48)</strong><br>Destruction intentionnelle d'un groupe national, ethnique, racial ou religieux. L'<em>intention de détruire</em> est l'élément central.<br><br>
+      <strong>Cas de référence (TD Azoulay)</strong><br>Rwanda 1994 : ~800 000 Tutsis en 100 jours.<br>Shoah : 101ème bataillon (Browning 1992).
+    </div>
+    <div>
+      <strong>Les 3 niveaux d'analyse à articuler (Semelin)</strong><br>· Macro : conditions historiques/politiques<br>· Méso : idéologie de groupe, propagande<br>· Micro : mécanismes psychologiques individuels<br><br>
+      <strong>Le débat central</strong><br>Monstres ordinaires (Browning/Arendt) vs Bourreaux volontaires (Goldhagen) → synthèse interactionniste (Tostain)
+    </div>
+  </div>
+  <div class="note" style="margin-top:10px">⚡ <strong>Fil conducteur :</strong> un génocide ne surgit pas soudainement. C'est un processus construit, en plusieurs étapes, à plusieurs niveaux. Les mécanismes psychosociaux du cours (déshumanisation, soumission, conformisme, engrenage) sont les rouages réels de ces massacres.</div>
 </div>
 
-<h3>Ce que le correcteur attend — Le sujet qui a déjà été posé</h3>
-<div class="card peach">
-  <p><em>"À partir des cadres d'analyses et des exemples vus en cours, expliquez quelles critiques peuvent susciter les conceptions de la déviance en termes de pure transgression morale et dans quelle mesure les comportements conçus comme déviants peuvent répondre à des systèmes de valeurs / systèmes normatifs particuliers."</em></p>
+<h3>I — Niveau macro : comment ça devient possible (TD)</h3>
+<div class="narrative">
+  <p>Au Rwanda, la distinction Hutu/Tutsi n'est pas originellement raciale. Avant la colonisation belge, c'est une <strong>hiérarchie sociale fluide</strong> — mobilité ascendante par le mérite possible, distinction acceptable parce que méritocratique. La colonisation bascule tout : elle rigidifie les identités via l'<strong>hypothèse hamitique</strong> (Tutsis = race étrangère venue d'Éthiopie ; Hutus = les "vrais Rwandais" bantous). Clivage social → <strong>clivage ethno-racial figé</strong>, inscrit dans les cartes d'identité. L'essentialisation fabrique un "nous" et un "eux" imperméables.</p>
+  <p>Années 1950 : velléités indépendantistes tutsies → retournement, les colonisateurs soutiennent les Hutus → prise de pouvoir hutue (1959) → indépendance (1962) → Tutsis en exil → FPR (1987). La hantise du "retour des Tutsis" s'installe. C'est le paradoxe de Semelin : les génocides sont souvent perpétrés par des États <em>fragiles</em>. Habyarimana, sous pression (FPR, accords d'Arusha), craint de perdre le pouvoir → désigne un ennemi intérieur. À cela s'ajoute la passivité de la communauté internationale (France — rapport Duclert ; ONU à Srebrenica) : signal d'impunité pour les génocidaires.</p>
 </div>
-<div class="card white">
-  <h4>Le plan détaillé avec les bonnes références</h4>
+
+<h3>II — Niveau méso : la machine idéologique et opérationnelle (TD)</h3>
+<div class="narrative">
+  <p><strong>Niveau idéologique :</strong> désignation d'un coupable (racialisation des difficultés économiques) → amorçage génocidaire par le discours ("ils sont une menace, cela justifie de s'en prendre à eux") → <strong>propagande en miroir</strong> ("les Tutsis vont nous exterminer, tuons-les avant") → endoctrinement RTLM (discours de haine, banalisation des massacres) → <strong>déshumanisation</strong> (les Tutsis = <em>inyenzi</em>, cancrelats) → <strong>culture de l'impunité</strong> (condamnés pour vol de vaches, pas pour meurtre). Finalité : rendre le passage à l'acte évident alors qu'il est, au départ, non-évident.</p>
+  <p><strong>Niveau opérationnel :</strong> milices d'auto-défense (machettes distribuées) → Interahamwe (1992, jeunesses embrigadées) → Hutu Power (1993, extrémistes fédérés) → éviction des Hutus modérés → capture/massacre des casques bleus de la MINUAR. Tout est en place avant le 6 avril 1994. Semelin : les <strong>entrepreneurs identitaires</strong> (intellectuels, politiques, journalistes) construisent et diffusent le discours de haine. La <strong>logique d'idée (Arendt)</strong> opère : on adopte une prémisse idéologique sans la questionner et on en déroule mécaniquement les conséquences.</p>
+</div>
+
+<h3>III — Niveau micro : pourquoi des individus ordinaires participent (CM)</h3>
+<div class="narrative">
+  <p><strong>Le 101ème bataillon (Browning, 1992) :</strong> 500 hommes ordinaires, peu nazifiés, enrôlés de force. Le Major Trapp (apprécié, ému) leur laisse le choix de refuser — une douzaine refusent le premier jour, sans sanction. Presque plus personne ne refusera ensuite. Bilan : 38 000 Juifs exécutés, 45 000 déportés. <strong>4 mécanismes situationnels :</strong> (1) effet de surprise (pas le temps de réfléchir) ; (2) soumission à une autorité légitime (état agentique, cf. Milgram) ; (3) conformisme et esprit de corps ("ne pas se décharger" sur les camarades est vécu comme une trahison) ; (4) engrenage progressif (renoncer = admettre que tout était inutile et mal). Plus les <strong>mécanismes de défense</strong> : évitement de la responsabilité ("je n'ai pas le choix"), réinterprétation de la réalité (haine a posteriori des victimes), inversion des valeurs (ceux qui refusent deviennent des lâches).</p>
+  <p><strong>Banalité du mal (Arendt) :</strong> le mal s'inscrit dans des activités routinières chez des individus ayant abandonné leur pouvoir de penser. Eichmann résout des problèmes techniques sans jamais nommer les Juifs dans ses documents. La "camisole de la logique" : prémisse idéologique adoptée sans questionnement → conséquences déroulées mécaniquement. <strong>Désengagement moral (Bandura) :</strong> justification morale ("noble cause"), euphémisation du langage, déplacement de responsabilité, déshumanisation. Au Rwanda : condamnés pour vol de vaches, pas pour meurtre — le filtre moral habituel est désactivé.</p>
+  <p><strong>Mécanismes spécifiques du passage à l'acte (TD) :</strong> déshumanisation (mise à distance + rationalisation a posteriori) ; inversion de la hiérarchie normative (punir le vol, pas le meurtre) ; sentiment de toute-puissance sur la victime (liberté totale de transgression, rage, absence totale d'empathie).</p>
+</div>
+
+<h3>IV — Le débat : monstres ordinaires vs bourreaux volontaires → synthèse (CM)</h3>
+<div class="narrative">
+  <p><strong>Goldhagen (1996) :</strong> choix actifs, initiatives, enthousiasme. Eichmann harcèle ses supérieurs pour en faire plus. Antisémitisme d'élimination ancré culturellement. Responsabilité individuelle pleine. <strong>Reicher, Haslam & Rath (2008) — Making a Virtue of Evil :</strong> 5 étapes (identification au groupe → exclusion de l'exogroupe → perception de la menace → groupe = seul vertueux → faire du mal une vertu). Les acteurs choisissent activement, célèbrent leurs actes comme des vertus. On fait toujours le mal au nom du bien. <strong>Synthèse interactionniste (Tostain) :</strong> ni pur situationnisme ni pur intentionnalisme. La personne et la situation se transforment mutuellement. Responsabilité individuelle maintenue (Arendt : "ils ont choisi de démissionner de leur humanité") — mais conditions sociales et idéologiques déterminantes.</p>
+  <p><strong>Sur la part d'inexplicable (sujet Déc. 2025) :</strong> la sidération morale (Semelin) — tuer ses voisins, des enfants — heurte quelque chose de fondamental. Lanzmann : "Entre l'acte de vouloir tuer et l'acte de tuer, il y a un abîme." La variabilité interindividuelle : à conditions identiques, certains refusent (les Justes, les 10-20% du 101ème). Mais dire "c'est inexplicable" risque de dédouaner les responsables et de rendre la prévention impossible (Bauman : ne pas en faire une béquille métaphysique).</p>
+</div>
+
+<div class="card mint">
+  <h4>🔗 Ce thème se connecte à</h4>
+  <ul>
+    <li><strong>Tyrannie :</strong> les 6 facteurs de la pente fatale de Zimbardo (surprise, dés-individuation, diffusion de responsabilité, obéissance, conformisme, tolérance passive) se retrouvent dans les dynamiques génocidaires — mais articulés à une idéologie construite, pas à un simple effet situationnel.</li>
+    <li><strong>Radicalisation :</strong> même architecture profonde (désignation de l'ennemi, propagande en miroir, Making a Virtue of Evil, engrenage). Différence : échelle, rôle de l'État, dimension identitaire choisie plus centrale dans la radicalisation.</li>
+    <li><strong>Absence d'aide :</strong> la passivité internationale = effet témoin à l'échelle macro (dilution de responsabilité entre États).</li>
+    <li><strong>Déviance :</strong> le génocide est perçu par ses auteurs non comme une déviance mais comme une norme — conformité à un autre système de valeurs.</li>
+  </ul>
+</div>
+<div class="note">📚 <strong>Références incontournables :</strong> Lemkin · Semelin (2003, 3 niveaux) · Browning (1992, 101ème bataillon, 4 raisons) · Arendt (banalité du mal, camisole de la logique) · Goldhagen (1996) · Reicher, Haslam & Rath (2008, Making a Virtue of Evil) · Bandura (désengagement moral) · Milgram (état agentique) · Azoulay/TD (niveaux idéologique + opérationnel au Rwanda) · RTLM · Interahamwe · Hutu Power · Rapport Duclert · Lanzmann · Bauman.</div>
+</div><!-- sy-ge -->
+
+<!-- ======== TYRANNIE ======== -->
+<div id="sy-ty" class="sub-content">
+<h2>⚖️ Tyrannie — Que mettre si ce thème tombe ?</h2>
+
+<div class="card rose">
+  <h4>🃏 En un coup d'œil</h4>
+  <div class="two-col">
+    <div>
+      <strong>Définition (Zimbardo)</strong><br>Système social inégal comprenant le pouvoir arbitraire et oppresseur d'un groupe sur un autre.<br><br>
+      <strong>Expériences (CM)</strong><br>· SPE — Zimbardo 1971 (⚠️ critiqué sévèrement : Le Texier 2018)<br>· BBC Prison Study — Reicher & Haslam 2002
+    </div>
+    <div>
+      <strong>Débat central</strong><br>Zimbardo : la situation crée automatiquement la tyrannie (6 facteurs, pente fatale).<br>Reicher & Haslam : l'identité sociale et les dynamiques de groupe déterminent si tyrannie ou résistance.<br><br>
+      <strong>Théorie de fond</strong><br>Identité sociale — Tajfel & Turner
+    </div>
+  </div>
+  <div class="note" style="margin-top:10px">⚡ <strong>Fil conducteur :</strong> la même situation peut produire tyrannie <em>ou</em> résistance selon la structure des relations entre groupes. La tyrannie n'est pas une fatalité situationnelle — c'est le produit d'une dynamique identitaire.</div>
+</div>
+
+<h3>I — L'approche situationniste : Zimbardo (1971) et ses 6 facteurs</h3>
+<div class="narrative">
+  <p>Contexte : révoltes dans les prisons américaines fin années 1960, dont la révolte d'Attica (40 morts). Protocole au sous-sol de Stanford : 15$/jour, 2 semaines, répartition aléatoire en gardiens (uniforme kaki, matraque, lunettes teintées) et détenus (arrêtés à domicile par de vrais policiers, dénudés, bonnet en bas nylon simulant le crâne rasé, blouse trop courte, désignés par matricule). Consigne : pas de violence physique.</p>
+  <p>Escalade : jour 1 calme → jour 2 révolte des détenus (bonnet arraché, barricades) → répression (extincteurs, isolement, bonnes/mauvaises cellules, punition collective, réveils nocturnes, pompes forcées, nettoyage toilettes à main nue, permission obligatoire pour uriner) → certains gardiens sadiques, détenus en détresse psychologique. Arrêt au 6ème jour : sévices sexuels sur vidéos de surveillance ; la doctorante Maslach (future épouse de Zimbardo) exige l'arrêt. En réalité : Zimbardo avait obtenu ce qu'il voulait, et les participants commençaient à contacter des avocats.</p>
+  <p><strong>Conclusion de Zimbardo :</strong> pas la personnalité des gardiens qui produit la tyrannie (tests normaux) — mais la situation. Les <strong>6 facteurs de la pente fatale :</strong> (1) faire le premier pas sans réfléchir (effet de surprise) ; (2) dés-individuation de soi (uniforme, rôle) ; (3) diffusion de responsabilité (l'autorité assume la responsabilité morale) ; (4) obéissance à l'autorité et idéologie ("faire avancer la science") ; (5) conformité aux normes du groupe (peur d'exclusion) ; (6) tolérance passive au mal (inaction, cf. Arendt).</p>
+</div>
+
+<h3>II — La remise en cause sévère : Le Texier (2018)</h3>
+<div class="narrative">
+  <p>Aucun article scientifique publié → pas de vérification externe. <strong>Critiques antérieures :</strong> Fromm (2/3 des gardiens non-sadiques — on ne peut pas transformer n'importe qui en sadique par la situation) ; Festinger (pas de nouvelles connaissances, objectif de spectacle) ; Carnahan & Macfarland (les sujets répondant à une annonce "étude de vie en prison" ont des profils plus autoritaires et machiavéliques — biais de sélection).</p>
+  <p><strong>Critique centrale de Le Texier :</strong> Zimbardo a <em>prescrit</em> dès le départ aux gardiens ce qu'il voulait obtenir. "Il s'agit de développer l'ennui, la frustration, la peur, l'arbitraire, l'impuissance chez les détenus." Il les encourageait à être durs, les réprimandait s'ils ne l'étaient pas. Il prescrivait les réveils nocturnes et les exercices matinaux. Deux biais : (1) <strong>biais de demande (Orne)</strong> — les gardiens répondaient aux attentes implicites de Zimbardo, pas à la situation ; (2) <strong>biais expérimentateur (Rosenthal)</strong> — Zimbardo construisait ce qu'il prétendait observer. "Ce n'est pas une situation néfaste qui a créé la déshumanisation, mais la déshumanisation prescrite par Zimbardo qui a créé la situation néfaste." C'est l'inverse de ce qu'il affirme. Deux limites structurelles : conception behaviouriste (sujets réactants passifs) ; manque de réalisme (vraie prison = durée et risques incomparables). <strong>Ce qu'on garde :</strong> les mécanismes évoqués restent pertinents, et l'expérience a mis en lumière les problématiques carcérales réelles.</p>
+</div>
+
+<h3>III — L'approche interactionniste : BBC Prison Study (Reicher & Haslam, 2002)</h3>
+<div class="narrative">
+  <p>Fondé sur la <strong>théorie de l'identité sociale (Tajfel & Turner)</strong> : les individus n'agissent pas automatiquement selon les attentes de leur groupe — seulement si l'appartenance est internalisée. <strong>H1 :</strong> les gardiens (groupe dominant) s'identifient d'emblée et imposent leur pouvoir. <strong>H2 :</strong> les prisonniers contestent uniquement si les relations sont perçues comme imperméables et illégitimes. 4 conditions favorisant la résistance : <strong>imperméabilité</strong> (frontières fermées entre groupes) + <strong>identification forte</strong> au groupe dominé + <strong>instabilité + illégitimité</strong> perçues + <strong>alternatives cognitives</strong> (projet de transformation).</p>
+  <p>Protocole (Décembre 2001, 15 hommes, 8 jours, 6 gardiens + 9 détenus). 3 manipulations expérimentales : (1) perméabilité initialement ouverte puis fermée → identité de groupe des détenus se construit ; (2) jour 5 : légitimité remise en cause ("pas de différence de personnalité gardiens/détenus") ; (3) jour 5 : introduction d'un prisonnier ex-syndicaliste. Résultats : jours 1-3, gardiens hésitent, détenus développent une forte identité de groupe et commencent à contester. Jour 6 : révolte, les détenus investissent le quartier des gardiens. Jours 6-8 : tentative d'organisation horizontale → les leaders marginalisés imposent un <strong>régime tyrannique plus fort qu'avant</strong> → les participants s'y soumettent par défaut, faute de solidarité collective. <strong>Conclusion Reicher & Haslam :</strong> "C'est l'éclatement des groupes et l'impuissance qui créent les conditions dans lesquelles la tyrannie peut triompher."</p>
+</div>
+
+<div class="card mint">
+  <h4>🔗 Ce thème se connecte à</h4>
+  <ul>
+    <li><strong>Génocides :</strong> les 6 facteurs de Zimbardo (surprise, dés-individuation, diffusion de responsabilité, obéissance, conformisme, tolérance passive) se retrouvent dans les dynamiques génocidaires — mais articulés à une idéologie construite.</li>
+    <li><strong>Absence d'aide :</strong> tolérance passive (6ème facteur Zimbardo) et dilution de responsabilité (Darley & Latané) : même logique d'inaction par conformisme et attentisme.</li>
+    <li><strong>Radicalisation :</strong> le syndicaliste de la BBC Prison Study catalyse la résistance — même dynamique que le recruteur radical (leader qui propose un projet identitaire alternatif).</li>
+    <li><strong>Milgram/Zimbardo :</strong> mêmes école et quartier à New York. Tous deux situationnistes, tous deux critiqués éthiquement et méthodologiquement. Milgram : soumission à l'autorité (état agentique). Zimbardo : tyrannie par pente fatale. Zimbardo beaucoup plus critiqué (Le Texier 2018).</li>
+  </ul>
+</div>
+<div class="note">📚 <strong>Références incontournables :</strong> Zimbardo (1971, SPE, 6 facteurs, Lucifer Effect) · Le Texier (2018, critique radicale) · Fromm, Festinger, Carnahan & Macfarland (critiques antérieures) · Orne (biais de demande) · Rosenthal (biais expérimentateur) · Reicher & Haslam (2002, BBC Prison Study) · Tajfel & Turner (identité sociale) · Milgram (état agentique, lien structurel).</div>
+</div><!-- sy-ty -->
+
+<!-- ======== ABSENCE D'AIDE ======== -->
+<div id="sy-ai" class="sub-content">
+<h2>🤝 Absence d'aide — Que mettre si ce thème tombe ?</h2>
+
+<div class="card rose">
+  <h4>🃏 En un coup d'œil</h4>
+  <div class="two-col">
+    <div>
+      <strong>Faits divers de référence</strong><br>Kitty Genovese, 13 mars 1964, New York — "38 témoins" inactifs. ⚠️ Mythe largement inexact (Manning, Levine & Collins, 2007) : ~6 témoins réels, certains ont agi.<br>Narumi Kurosaki, Besançon, 2016 — 11 étudiants réveillés, quasi aucun n'intervient.
+    </div>
+    <div>
+      <strong>Concept clé : effet spectateur / témoin</strong><br>Darley & Latané (1970) : plus les témoins sont nombreux → moins la probabilité d'intervention est forte + délai plus long.<br><br>
+      <strong>Évolutions clés</strong><br>· Levine & Crowther (2008) : identité sociale → contre-effet témoin<br>· Fisher et al. (2011) : méta-analyse, effet modéré<br>· Levine et al. (2020) : la norme réelle est d'intervenir
+    </div>
+  </div>
+  <div class="note" style="margin-top:10px">⚡ <strong>Fil conducteur :</strong> l'effet témoin n'est pas une loi absolue. Il dépend de la structure des relations entre témoins et victime (identité partagée, lien social) et de la nature du danger. La norme réelle, en situation dangereuse, est d'intervenir.</div>
+</div>
+
+<h3>I — Le modèle cognitif de Darley & Latané (1970) : le processus en 5 étapes</h3>
+<div class="narrative">
+  <p>Darley & Latané écartent les explications moralisatrices (la grande ville déshumanise). Ils proposent un processus décisionnel en <strong>5 étapes</strong> : (1) constater qu'il se passe quelque chose ; (2) interpréter la situation comme urgente — si personne ne réagit autour de soi, <strong>ignorance plurielle</strong> : chacun regarde les autres, pense qu'ils ont une information supplémentaire, conclut que ce n'est peut-être pas si grave ; (3) décider que c'est de <em>ma</em> responsabilité — <strong>dilution de la responsabilité</strong> : plus il y a de témoins, moins chacun se sent responsable ; (4) évaluer comment intervenir (risques, compétences) ; (5) fournir de l'aide.</p>
+  <p><strong>Expérience 1 — crise d'épilepsie (interphone, 1970) :</strong> 2 participants → 85% d'intervention / 52s. 3 participants → 62% / 93s. 6 participants → 31% / 166s. Aucune corrélation avec les traits de personnalité — c'est la situation qui détermine. <strong>Expérience "Lady in Distress" (1969) :</strong> sujet isolé → 70%. Compère passif présent → 7%. Deux naïfs ne se connaissant pas → 40%. Deux amis → 70% (le lien social entre témoins efface l'influence inhibitrice). <strong>Double mécanisme :</strong> (1) influence inhibitrice sociale (les autres n'interviennent pas → je n'interviens pas) ; (2) distorsion de la réalité (on se convainc que ça n'était pas si grave). Important : les sujets qui n'interviennent pas ne sont pas apathiques — ils tremblent, suent, sont en état d'indécision. Ce n'est pas de l'indifférence, c'est un conflit non résolu.</p>
+</div>
+
+<h3>II — Le contre-effet témoin : Levine & Crowther (2008)</h3>
+<div class="narrative">
+  <p>Levine & Crowther (théorie de l'identité sociale, Tajfel) : l'effet témoin est modulé par les relations identitaires entre témoins et victime. <strong>H1 :</strong> sans identité partagée → effet témoin classique (plus de témoins = moins d'aide). <strong>H2 :</strong> avec identité partagée → <strong>contre-effet témoin</strong> (plus de témoins = plus d'aide). <strong>Expérience Lancaster (2008) :</strong> un professeur réprimande sévèrement une étudiante. Les sujets repassent devant la porte et l'entendent sangloter. Résultats : femme seule → 37%, homme seul → 37%. Groupe unisexe femmes → 75% (identité de genre partagée). Groupe unisexe hommes → 16% (pas d'identité partagée = effet classique). Groupe mixte femme minoritaire → 27% (se décharge sur les hommes). Groupe mixte homme minoritaire → 76% : norme de chevalerie EN PRÉSENCE de femmes + <strong>effet brebis galeuse</strong> (vouloir restaurer l'image du groupe face à l'attitude choquante du professeur — "nous, on se comporte correctement").</p>
+</div>
+
+<h3>III — Méta-analyse Fisher et al. (2011) et réalité de terrain</h3>
+<div class="narrative">
+  <p>Méta-analyse sur 53 études (1960-2010) : l'effet témoin existe mais est <strong>modéré</strong> (corrélation -0,35). Il s'inverse dans certaines conditions : (1) <strong>danger objectivement grave</strong> → contre-effet (plus on est nombreux, plus on peut se soutenir pour intervenir et neutraliser l'agresseur) ; (2) sexe des témoins : hommes interviennent davantage en cas de danger physique (normes sociales + enjeu de capacité physique) ; (3) effet plus fort en laboratoire qu'en terrain réel. <strong>Levine, Philpot & Kovalenko (2020) — vidéos de surveillance :</strong> la <em>norme réelle est d'intervenir</em> (contre l'idée reçue). Facteurs prédictifs : lien social existant, proximité avec l'agresseur (mieux placé pour négocier la désescalade), appartenances multiples conjointes (identités croisées multiplient les raisons d'intervenir). Étude match Manchester United : T-shirt Man U → 70% d'aide, T-shirt neutre → ~25%. <strong>Leçon pratique :</strong> si en danger, interpellez quelqu'un individuellement — casser la dilution de responsabilité.</p>
+</div>
+
+<h3>IV — L'affaire Genovese revisitée (Manning, Levine & Collins, 2007)</h3>
+<div class="narrative">
+  <p>Les auteurs révèlent : pas 38 témoins mais ~6 ; pas 3 attaques mais 2 ; scène ambiguë au départ ; plusieurs témoins ont tenté de contacter la police (le 911 n'existait pas) ; un témoin a crié contre l'agresseur. <strong>Le mythe des 38 témoins apathiques est largement faux.</strong> Pourquoi s'est-il diffusé si vite en psychologie sociale ? Tous les ingrédients d'une belle histoire scientifique : récit dramatique + leçon claire + morale simple. Il entrait en résonance avec les biais de la discipline. Ce cas illustre un méta-point : la psychologie sociale est elle-même soumise aux processus qu'elle étudie (conformisme, représentations partagées).</p>
+</div>
+
+<div class="card mint">
+  <h4>🔗 Ce thème se connecte à</h4>
+  <ul>
+    <li><strong>Tyrannie :</strong> tolérance passive (6ème facteur Zimbardo) et dilution de responsabilité (Darley & Latané) : même logique d'inaction par conformisme et attentisme.</li>
+    <li><strong>Génocides :</strong> passivité internationale face au Rwanda = effet témoin macroscopique (dilution de responsabilité entre États).</li>
+    <li><strong>Déviance :</strong> la non-assistance à personne en danger est une infraction pénale. Exemple d'un comportement déviant produit par des mécanismes situationnels, pas par de la malveillance.</li>
+    <li><strong>Identité sociale :</strong> le contre-effet témoin (Levine & Crowther) connecte ce chapitre à la BBC Prison Study — dans les deux cas, l'identité groupale est le moteur de l'action collective.</li>
+  </ul>
+</div>
+<div class="note">📚 <strong>Références incontournables :</strong> Darley & Latané (1970, modèle 5 étapes, 2 expériences) · Manning, Levine & Collins (2007, révision affaire Genovese) · Levine & Crowther (2008, 2012, identité sociale, Lancaster) · Fisher et al. (2011, méta-analyse) · Levine, Philpot & Kovalenko (2020, vidéos, norme d'intervention) · Tajfel & Turner · Genovese (1964) · Kurosaki (2016, Besançon).</div>
+</div><!-- sy-ai -->
+
+<!-- ======== RADICALISATION ======== -->
+<div id="sy-ra" class="sub-content">
+<h2>🔥 Radicalisation — Que mettre si ce thème tombe ?</h2>
+
+<div class="card rose">
+  <h4>🃏 En un coup d'œil</h4>
+  <div class="two-col">
+    <div>
+      <strong>Définition</strong><br>Processus par lequel un individu en vient à adopter des idéologies extrêmes et à considérer comme légitime le recours à la violence pour les imposer.<br><br>
+      <strong>Débat central (TD)</strong><br>Déviance sociale (transgression de normes dominantes) ou socialisation radicale (conformité à un autre système normatif) ?
+    </div>
+    <div>
+      <strong>Théories clés</strong><br>· Moghaddam (2005) : escalier vers le terrorisme (6 étapes)<br>· Ferret (2017) : subjectivation individuelle, indéterminisme<br>· Crettiez : trois niveaux (cognitif, comportemental, violent)<br>· Reicher, Haslam & Rath (2008) : Making a Virtue of Evil<br>· Bandura : désengagement moral
+    </div>
+  </div>
+  <div class="note" style="margin-top:10px">⚡ <strong>Fil conducteur :</strong> la radicalisation partage sa structure profonde avec les dynamiques génocidaires mais s'en distingue par sa dimension identitaire et choisie plus centrale. Ce n'est pas une pathologie individuelle — c'est un processus social.</div>
+</div>
+
+<h3>I — Déviance ou socialisation radicale ? (TD)</h3>
+<div class="narrative">
+  <p>La question posée en TD est fondamentale : est-ce une <strong>déviance sociale</strong> (transgression des normes dominantes) ou une <strong>socialisation radicale</strong> (conformité à un système normatif alternatif cohérent) ? Si c'est une déviance → réponse pénale et resocialisation. Si c'est une socialisation radicale → il faut s'attaquer aux conditions qui rendent ce groupe de référence attrayant (désaffiliation, marginalisation, discrimination perçue, contexte géopolitique — Burgat). Crettiez distingue trois niveaux qui ne se superposent pas toujours : radicalisation <strong>cognitive</strong> (idéologie extrême sans passage à l'acte), <strong>comportementale</strong> (pratiques radicales), <strong>violente</strong> (recours à la violence).</p>
+</div>
+
+<h3>II — L'escalier vers le terrorisme (Moghaddam, 2005)</h3>
+<div class="narrative">
+  <p>Modèle en 6 étapes : <strong>Rez-de-chaussée :</strong> conditions objectives injustes (pauvreté, discrimination, exclusion) — tout le monde y vit, peu montent. <strong>1er étage :</strong> déplacement de l'agressivité → hostilité envers un groupe cible désigné. <strong>2ème étage :</strong> désengagement moral (Bandura) → justification de la violence contre l'ennemi. <strong>3ème étage :</strong> catégorisation sociale intense → identification forte au groupe radical, exclusion absolue de l'exogroupe. <strong>4ème étage :</strong> légitimation de la violence → la violence devient vertueuse (cf. Making a Virtue of Evil). <strong>5ème étage :</strong> passage à l'acte, inhibition de l'empathie. À chaque étage, certains restent, certains montent — ce qui détermine qui monte : intensité des griefs perçus, qualité du recrutement, disponibilité d'un groupe radical, facteurs individuels (besoin de sens, de cohésion, de reconnaissance).</p>
+</div>
+
+<h3>III — Ferret (2017) : la subjectivation individuelle</h3>
+<div class="narrative">
+  <p>Limite cruciale aux approches structurelles : deux individus exposés aux mêmes facteurs de risque (même quartier, même discrimination) peuvent suivre des trajectoires totalement différentes. <strong>L'indéterminisme de la trajectoire individuelle est réel.</strong> Pour Ferret, la radicalisation est un processus de <strong>subjectivation</strong> — le sujet construit activement un sens à sa trajectoire, négocie son identité entre des appartenances multiples et contradictoires. C'est un projet identitaire, une quête de sens et de cohérence — pas simplement une réponse à des conditions objectives. Rejoint l'approche interactionniste de Tostain : la personne <em>et</em> la situation se transforment mutuellement.</p>
+</div>
+
+<h3>IV — Les parallèles avec les génocides : même structure, contextes différents</h3>
+<div class="narrative">
+  <p><strong>Commun :</strong> construction d'un ennemi → propagande en miroir → déshumanisation → cohésion groupale forte et exclusive → Making a Virtue of Evil → désengagement moral (Bandura) → engrenage progressif. <strong>Différences :</strong> (1) échelle et organisation : génocide = État organisateur ; radicalisation peut être individuelle ou en petit groupe ; (2) rôle de l'État : génocide = l'État organise ; radicalisation = l'État est souvent la cible ; (3) dimension identitaire choisie : plus centrale dans la radicalisation (quête de sens, appartenance, fraternité — Ferret) ; dans le génocide, pression institutionnelle plus déterminante ; (4) temporalité : génocide = explosion rapide après longue préparation ; radicalisation = processus graduel sur des années. Différence de degré, pas de nature.</p>
+</div>
+
+<div class="card mint">
+  <h4>🔗 Ce thème se connecte à</h4>
+  <ul>
+    <li><strong>Génocides :</strong> même architecture profonde (désignation de l'ennemi, propagande en miroir, déshumanisation, Making a Virtue of Evil). Différence de degré, pas de nature.</li>
+    <li><strong>Tyrannie :</strong> le recruteur radical joue le même rôle catalyseur que le syndicaliste de la BBC Prison Study (leader qui propose un projet identitaire alternatif).</li>
+    <li><strong>Déviance :</strong> est-ce une déviance ou une socialisation radicale ? Les deux perspectives sont nécessaires : transgression des normes dominantes ET conformité à des normes alternatives.</li>
+    <li><strong>Désengagement moral (Bandura) :</strong> mécanisme central dans la radicalisation ET le génocide.</li>
+  </ul>
+</div>
+<div class="note">📚 <strong>Références incontournables :</strong> Moghaddam (2005, escalier 6 étapes) · Ferret (2017, subjectivation, indéterminisme) · Crettiez (trois niveaux) · Burgat (contexte géopolitique) · Reicher, Haslam & Rath (2008, Making a Virtue of Evil) · Bandura (désengagement moral) · Tajfel & Turner (identité sociale).</div>
+</div><!-- sy-ra -->
+
+<!-- ======== VIOL ======== -->
+<div id="sy-vi" class="sub-content">
+<h2>🏛️ Viol & Violences — Que mettre si ce thème tombe ?</h2>
+
+<div class="card rose">
+  <h4>🃏 En un coup d'œil</h4>
+  <div class="two-col">
+    <div>
+      <strong>Notion centrale</strong><br>Représentations sociales : connaissances de sens commun socialement élaborées, créant une réalité partagée, guidant l'action, sous-tendues par des valeurs et normes.<br><br>
+      <strong>Source principale (TD Azoulay)</strong><br>Vigarello, <em>Histoire du viol</em> + évolution historique des réactions sociales et pénales.
+    </div>
+    <div>
+      <strong>Fil historique</strong><br>Ancien Régime (rapt d'honneur) → Révolution → 19ème s. → Procès d'Aix 1978 → Loi 1980 (crime) → 2018 / 2021 (ajouts)<br><br>
+      <strong>Débat clé</strong><br>Introduire la notion de consentement dans la loi ?<br>Le Magueresse (pour) vs MacKinnon (contre)
+    </div>
+  </div>
+  <div class="note" style="margin-top:10px">⚡ <strong>Fil conducteur :</strong> la définition légale et sociale du viol n'est pas universelle ni stable. Elle est le produit de représentations sociales historiquement situées — ce qui illustre parfaitement comment les comportements "déviants" sont des constructions sociales.</div>
+</div>
+
+<h3>I — L'Ancien Régime : le viol comme rapt d'honneur (Vigarello)</h3>
+<div class="narrative">
+  <p>En principe, le viol est réprimé dans toute société. Mais sous l'Ancien Régime (16ème-17ème s.), la peine théorique est très forte (mort possible) et quasi jamais appliquée. L'hiatus est total. Pourquoi ? Les violences contre les femmes sont "noyées" : ce qui compte, c'est l'<strong>atteinte aux biens</strong>. Société de pénurie, l'aristocratie protège ses propriétés. Jean Valjean condamné pour avoir volé du pain. Le viol est assimilé à un <strong>rapt</strong> — voler l'honneur <em>du père ou du mari</em>, pas de la femme elle-même. La femme n'est pas sujet de droit. La honte est associée à la victime. On doute : "elle devait avoir les moyens de résister — si pas de résistance, alors consentement." Minimisation systématique : chez les aristocrates, jeu libertin. Certains auteurs portent plainte contre leurs victimes. Dans le cas "Force du sang" (noble viole une jeune fille), la solution est le <em>mariage</em> — restaurer l'honneur de la famille, pas sanctionner le violeur.</p>
+</div>
+
+<h3>II — 19ème siècle et prémices du changement</h3>
+<div class="narrative">
+  <p>Juste avant la Révolution : affaire Rosekeller (1768) — abus d'un aristocrate → arrangement financier, assimilation du violeur à un "satyriasis". Le viol devient une <strong>menace contre l'ordre social</strong> (et non plus une faute morale). Au 19ème s. : (1) distinction des violences sexuelles (physique, psychologique, morale) ; (2) augmentation des plaintes et condamnations — mais le poids de la honte reste sur la femme ; (3) évolution du profil stéréotypé : homme de pouvoir → marginal/vagabond → perverti → n'importe qui. Inversion hiérarchique : crime majeur autrefois = crime de sang ; dans la modernité = le viol. Cette inversion reflète un changement de valeurs fondamentales : l'intégrité de la personne prime désormais sur la propriété et l'honneur familial.</p>
+</div>
+
+<h3>III — Le procès d'Aix-en-Provence (1978) et l'évolution légale</h3>
+<div class="narrative">
+  <p>Deux femmes violées lors d'un camping portent plainte. Avocates : <strong>Gisèle Halimi et Agnès Fischot</strong>. Stratégie sur <strong>trois dimensions</strong> : (1) <em>Sociétale</em> : pas le procès de ces trois violeurs — le procès du viol comme phénomène social, produit des comportements machistes. Les auteurs avaient argué que les victimes étaient lesbiennes et violées "par plaisir." (2) <em>Juridique</em> : à cette époque, le viol est jugé en correctionnel (délit, pas crime). Halimi refuse la correctionnalisation. Évolution des définitions : 1810 = "tout coïte illicite" → 1980 = "tout acte de pénétration sexuelle de quelque nature, par violence, contrainte, menace ou surprise" (mais ne couvre pas le viol sur l'auteur lui-même) → 2018 = ajout "ou sur la personne de l'auteur" → 2021 = ajout "tout acte gluco-génitale" (ferme la porte à l'argument que la fellation ne serait pas un viol). Dans toutes ces définitions : le <strong>non-consentement n'y figure pas</strong>. (3) <em>Psychique</em> : reconnaissance du traumatisme. Le procès comme élément de reconnaissance pour la victime.</p>
+  <p><strong>Débat sur le consentement :</strong> Le Magueresse (pour) : centrer la procédure sur ce que la victime voulait ou non. MacKinnon (contre) : (1) le consentement de la femme n'est pas toujours libre — façonné par le pouvoir masculin ; (2) la charge de la preuve peserait sur la victime (difficile de prouver l'absence de quelque chose) ; (3) dans une relation désirée, il n'y a pas de consentement "en tant que tel" — la relation est réciproque ; (4) le consentement déplacerait le focus sur le comportement de la femme plutôt que sur celui de l'homme.</p>
+</div>
+
+<div class="card mint">
+  <h4>🔗 Ce thème se connecte à</h4>
+  <ul>
+    <li><strong>Déviance :</strong> l'évolution historique de la définition du viol illustre parfaitement que la déviance est une construction sociale. Ce qui était "normal" est aujourd'hui un crime grave.</li>
+    <li><strong>Génocides :</strong> même mécanisme de déshumanisation et de minimisation des victimes (doute sur la résistance, honte portée par la victime plutôt que l'auteur).</li>
+    <li><strong>Absence d'aide :</strong> les témoins de violences sexistes sont soumis aux mêmes mécanismes que l'effet témoin, renforcés par les normes de genre.</li>
+  </ul>
+</div>
+<div class="note">📚 <strong>Références incontournables :</strong> Vigarello (<em>Histoire du viol</em>) · Halimi & Fischot (procès d'Aix 1978, trois dimensions) · MacKinnon (contre le consentement dans la loi) · Le Magueresse (pour) · Évolution légale : 1810 → 1980 → 2018 → 2021.</div>
+</div><!-- sy-vi -->
+
+<!-- ======== DÉVIANCE ======== -->
+<div id="sy-dev" class="sub-content">
+<h2>🌀 Déviance — Que mettre si ce thème tombe ?</h2>
+
+<div class="card rose">
+  <h4>🃏 En un coup d'œil</h4>
+  <div class="two-col">
+    <div>
+      <strong>Questions fondatrices du cours</strong><br>Qu'est-ce qu'un comportement déviant ? Au regard de quoi l'est-il ?<br>Dans quelle mesure la déviance relève-t-elle d'une construction sociale ?<br>Déviance sociale ou divergence des normes ?<br>L'individu : acteur passif ou décisionnaire volontaire ?
+    </div>
+    <div>
+      <strong>Position de Tostain : approche interactionniste</strong><br>Ni déterminisme situationnel pur, ni explication individualiste/pathologisante. La personne <em>et</em> la situation se transforment mutuellement.<br><br>
+      <strong>Trois composantes de l'analyse</strong><br>Individu · Situation · Système
+    </div>
+  </div>
+  <div class="note" style="margin-top:10px">⚡ <strong>Ce sujet a déjà été posé directement :</strong> session 1 Déc. 2024 — "expliquez quelles critiques peuvent susciter les conceptions de la déviance en termes de pure transgression morale et dans quelle mesure les comportements conçus comme déviants peuvent répondre à des systèmes de valeurs / systèmes normatifs particuliers."</div>
+</div>
+
+<h3>I — La déviance est relative : ce que tous les thèmes du cours montrent</h3>
+<div class="narrative">
+  <p>Un comportement déviant est un comportement qui s'écarte des normes en vigueur dans un groupe ou une société donnée. Mais : quelles normes ? Définies par qui ? La déviance n'est pas un absolu moral universel — elle est relative à un système normatif particulier. <strong>Vigarello :</strong> sous l'Ancien Régime, ce que nous appelons viol était souvent toléré, célébré comme liberté aristocratique. La définition légale du viol a changé quatre fois en deux siècles. <strong>Plus radical :</strong> les comportements étudiés dans ce cours — génocide, tyrannie, radicalisation — ne sont <em>pas perçus comme déviants</em> par leurs auteurs. Les soldats du 101ème bataillon suivent les normes de leur groupe (obéissance, esprit de corps). Les génocidaires rwandais obéissent à leur État et à la RTLM. Les radicalisés appliquent leur interprétation du Coran. Eichmann résout des problèmes administratifs. Dans tous ces cas, le comportement "déviant" du point de vue de la morale universelle est <em>normal</em> du point de vue du système normatif local.</p>
+</div>
+
+<h3>II — Trois mécanismes qui produisent la déviance apparente</h3>
+<div class="narrative">
+  <p><strong>(1) La banalité du mal (Arendt) + Browning :</strong> les acteurs ne transgressent pas leurs normes — ils obéissent aux normes de leur groupe (autorité légitime, conformisme, esprit de corps). La camisole de la logique : la prémisse idéologique n'est jamais questionnée. <strong>(2) Making a Virtue of Evil (Reicher, Haslam & Rath, 2008) :</strong> les génocidaires et les terroristes se perçoivent comme vertueux. Ils n'agissent pas en transgressant — ils agissent conformément à un système de valeurs qui a transformé le mal en vertu. On fait toujours le mal au nom du bien. <strong>(3) La radicalisation (Ferret) :</strong> le radicalisé adhère à un système normatif alternatif cohérent. Il ne se perçoit pas comme déviant — il vit selon une "vraie" norme supérieure. Processus de subjectivation active.</p>
+</div>
+
+<h3>III — Dépasser le relativisme : l'approche interactionniste et la responsabilité</h3>
+<div class="narrative">
+  <p>Reconnaître que la déviance est une construction sociale ne signifie pas qu'il n'y a pas de responsabilité individuelle. <strong>Arendt :</strong> les acteurs ont fait le choix de démissionner de leur humanité — ils sont responsables de ce choix, même si les circonstances l'ont facilité. <strong>Goldhagen :</strong> certains acteurs sont intentionnels, actifs, enthousiastes — la situation ne suffit pas. <strong>L'approche interactionniste (Tostain) :</strong> ni déterminisme situationnel pur, ni explication individualiste. La déviance s'inscrit dans l'interaction entre : (1) caractéristiques personnelles (adhésion aux idéologies, traits) ; (2) caractéristiques des situations sociales (contexte, normes de groupe) ; (3) systèmes collectifs de pouvoir (structures qui définissent et maintiennent les normes). <strong>Implication pratique :</strong> comprendre la construction normative de la déviance permet de mieux prévenir — en agissant sur les systèmes de valeurs et les discours qui légitiment la violence, pas seulement sur les individus.</p>
+</div>
+
+<h3>Plan type pour le sujet tombé en Déc. 2024</h3>
+<div class="card peach">
+  <p><em>"Expliquez quelles critiques peuvent susciter les conceptions de la déviance en termes de pure transgression morale et dans quelle mesure les comportements conçus comme déviants peuvent répondre à des systèmes de valeurs / systèmes normatifs particuliers."</em></p>
+</div>
+<div class="card lavender">
   <ol>
-    <li>
-      <strong>Introduction :</strong> définir la déviance (comportement qui transgresse les normes d'un groupe social donné). Poser la tension : vision universaliste (il existe des normes morales transcendantes que certains comportements violent) vs vision relativiste (les normes sont des constructions sociales variables). Annoncer que tu vas défendre la deuxième tout en maintenant la responsabilité individuelle.
-    </li>
-    <li>
-      <strong>Partie I — Critiques de la conception universaliste :</strong>
-      <ul>
-        <li>Relativisme historique : le viol comme rapt d'honneur (Vigarello). L'homosexualité dans le DSM jusqu'en 1973. Ce qui est "déviant" change radicalement selon les époques.</li>
-        <li>Le pouvoir définit la norme : c'est toujours un groupe dominant qui désigne ce qui est anormal. La déviance peut être un outil de stigmatisation et de contrôle social.</li>
-        <li>La pathologisation : réduire le comportement déviant à une maladie individuelle (ex. sadisme, psychopathie) efface les dimensions situationnelles et collectives. Zimbardo le montre — des gens "normaux" aux tests psychologiques peuvent devenir sadiques (même si son expérience est critiquée par Le Texier).</li>
-      </ul>
-    </li>
-    <li>
-      <strong>Partie II — Les comportements déviants comme conformité à d'autres normes :</strong>
-      <ul>
-        <li>Banalité du mal (Arendt) + Browning : les membres du 101ème bataillon ne transgressent pas leurs normes — ils obéissent aux normes de leur groupe (autorité légitime, conformisme, esprit de corps). La camisole de la logique : la prémisse idéologique n'est jamais questionnée.</li>
-        <li>Making a Virtue of Evil (Reicher, Haslam & Rath, 2008) : les génocidaires et les terroristes se perçoivent comme vertueux. Ils ne "transgressent" pas — ils agissent conformément au système de valeurs de leur groupe, qui a transformé le mal en vertu.</li>
-        <li>Radicalisation (Ferret) : le radicalisé adhère à un système normatif alternatif cohérent et complet. Il ne se perçoit pas comme déviant — il vit selon une "vraie" norme supérieure.</li>
-        <li>TD Viol : les aristocrates de l'Ancien Régime ne se perçoivent pas comme des violeurs — ils suivent des normes de classe (libertinage, rapt d'honneur).</li>
-      </ul>
-    </li>
-    <li>
-      <strong>Partie III — Dépasser le relativisme : l'approche interactionniste et la responsabilité :</strong>
-      <ul>
-        <li>Reconnaître la construction sociale de la déviance ne signifie pas qu'il n'y a pas de responsabilité individuelle. Arendt : les acteurs ont fait le choix de démissionner de leur humanité — ils sont responsables.</li>
-        <li>Approche interactionniste : la déviance s'inscrit dans l'interaction entre individu (valeurs, adhésion à l'idéologie), situation (contexte, pression) et système de pouvoir (structures qui définissent et maintiennent les normes).</li>
-        <li>Implication pratique : comprendre la construction normative de la déviance permet de mieux prévenir — en agissant sur les systèmes de valeurs et les discours qui légitiment la violence, pas seulement sur les individus.</li>
-      </ul>
-    </li>
-    <li><strong>Conclusion :</strong> la déviance est une construction sociale — mais pas une construction arbitraire. Comprendre ses mécanismes (normes de groupe, systèmes de pouvoir, construction idéologique) est indispensable pour l'expliquer et la prévenir. Ouverture : la question de l'universalisme moral reste ouverte — certaines valeurs (intégrité physique, autonomie) semblent plus fondamentales que d'autres.</li>
+    <li><strong>Introduction :</strong> définir la déviance. Poser la tension universalisme vs relativisme. Annoncer que tu vas défendre la deuxième tout en maintenant la responsabilité individuelle.</li>
+    <li><strong>I — Critiques de la conception universaliste :</strong> relativisme historique (Vigarello, viol comme rapt d'honneur) ; le pouvoir définit la norme (groupe dominant qui désigne l'anormal) ; pathologisation (réduire à une maladie individuelle occulte les dimensions collectives).</li>
+    <li><strong>II — Les comportements "déviants" comme conformité à d'autres normes :</strong> banalité du mal (Arendt) + Browning (conformisme, obéissance, esprit de corps) ; Making a Virtue of Evil (Reicher et al.) — le mal célébré comme vertu ; radicalisation (Ferret — socialisation à un système normatif alternatif) ; viol comme libertin aristocratique (Vigarello).</li>
+    <li><strong>III — Dépasser le relativisme, maintenir la responsabilité :</strong> approche interactionniste (individu × situation × système) ; Arendt : responsabilité maintenue malgré les mécanismes situationnels ; Goldhagen : les bourreaux volontaires.</li>
+    <li><strong>Conclusion :</strong> la déviance est une construction sociale — mais pas arbitraire. Comprendre ses mécanismes permet de prévenir. Ouverture sur l'universalisme moral partiel (certaines valeurs semblent plus fondamentales).</li>
   </ol>
 </div>
+<div class="note">📚 <strong>Références incontournables :</strong> Arendt (banalité du mal, camisole de la logique, responsabilité) · Browning (1992, 4 mécanismes) · Goldhagen (1996, bourreaux volontaires) · Reicher, Haslam & Rath (2008, Making a Virtue of Evil) · Ferret (2017, subjectivation) · Vigarello (Histoire du viol, relativisme historique) · Milgram (état agentique) · Zimbardo + Le Texier 2018 · Bandura (désengagement moral).</div>
+</div><!-- sy-dev -->
 
-<h3>Extrait de réponse rédigée</h3>
-<div class="card lavender">
-  <p>La conception de la déviance comme pure transgression morale universelle achoppe sur un constat empirique simple : ce qui est qualifié de "déviant" varie considérablement selon les sociétés et les époques. Vigarello (dans son <em>Histoire du viol</em>) le montre de façon saisissante : dans la société d'Ancien Régime, le viol est assimilé à un rapt — vol de l'honneur du père ou du mari, pas de la femme elle-même. L'aristocrate qui commet un viol ne se perçoit pas comme un criminel : il agit selon les normes de sa classe, où le libertinage est un jeu social acceptable. Ce n'est qu'au XIXème siècle que la définition évolue, et aujourd'hui que le viol est devenu le crime majeur de notre société — reflet d'une transformation profonde des valeurs autour de l'autonomie individuelle et de l'intégrité physique.</p>
-  <p>Plus profondément, les comportements que nous qualifions de "déviants" au sens universel peuvent être des comportements de <em>conformité</em> dans le système de normes du groupe. Browning (1992) le montre pour les membres du 101ème bataillon : ils participent aux massacres non pas par sadisme ou par conviction idéologique particulière, mais par conformisme (esprit de corps, ne pas se décharger sur les camarades), par soumission à une autorité jugée légitime, et par engrenage progressif. Dans leur cadre de référence, refuser serait la transgression — trahison et lâcheté. Arendt nomme ce processus la "banalité du mal" : ces individus ont renoncé à leur pouvoir de penser, accepté la camisole de la logique idéologique.</p>
-  <p>Reicher, Haslam et Rath (2008) théorisent cette dynamique : les acteurs de la violence collective ne perçoivent pas leurs actes comme des transgressions — ils les célèbrent comme des vertus, au service de leur groupe, de leur race, de leur Dieu. La déviance n'existe pas de leur point de vue : ils agissent pour le bien.</p>
-  <p>Pour autant, reconnaître la construction sociale de la déviance ne revient pas à tomber dans un relativisme moral absolu qui absoudrait tous les acteurs. Arendt maintient que les exécutants du génocide ont fait le choix de démissionner de leur humanité — la responsabilité individuelle reste entière. L'approche interactionniste de Tostain offre une voie : comprendre les mécanismes situationnels et normatifs qui conduisent à la déviance, sans pour autant renoncer à la question de la responsabilité.</p>
+<!-- ======== SUJETS CROISÉS ======== -->
+<div id="sy-croises" class="sub-content">
+<h2>🔗 Comparer X et Y — Sujets croisés</h2>
+
+<div class="card lavender" style="margin-bottom:16px">
+  <p>Les correcteurs aiment les sujets qui demandent de mettre en tension deux théories ou deux phénomènes. Voici les comparaisons les plus probables et comment les traiter.</p>
 </div>
 
-<h3>💡 Ce qui fait la différence dans une copie</h3>
-<div class="card mint">
-  <ul>
-    <li><strong>Montrer que tu connais les deux faces :</strong> la construction sociale de la norme ET le maintien de la responsabilité individuelle. Ni "tout est relatif" ni "c'est universellement mal". La tension est le signe de la maturité intellectuelle que le correcteur cherche.</li>
-    <li><strong>Croiser CM et TD sans les séparer :</strong> Browning + Vigarello + Rwanda + radicalisation. Les mettre dans le même paragraphe si c'est le même mécanisme.</li>
-    <li><strong>Éviter le catalogue :</strong> ne pas lister "Browning dit ça, Arendt dit ça, Goldhagen dit ça". Construire une argumentation où chaque référence sert à avancer dans le raisonnement.</li>
-    <li><strong>La conclusion doit prendre position :</strong> "comprendre n'est pas excuser" — cette formule simple suffit à montrer que tu as saisi l'enjeu éthique et politique du cours.</li>
-  </ul>
+<h3>1 — Zimbardo (SPE 1971) vs Reicher & Haslam (BBC 2002)</h3>
+<div class="narrative">
+  <p><strong>Point commun :</strong> même paradigme carcéral, participants répartis aléatoirement, émergence de dynamiques de pouvoir, arrêt prématuré. <strong>Zimbardo :</strong> la situation crée automatiquement la tyrannie (pente fatale, 6 facteurs). Lecture purement situationniste. <em>Mais :</em> Le Texier (2018) montre que Zimbardo a prescrit les comportements aux gardiens — ce n'est pas une pente fatale spontanée mais une déshumanisation prescrite. <strong>Reicher & Haslam :</strong> les gardiens n'exploitent pas spontanément leur pouvoir. Les détenus se révoltent dans des conditions d'imperméabilité/illégitimité. La tyrannie n'émerge que quand les détenus n'ont plus de solidarité collective. La critique de la SPE valide indirectement Reicher & Haslam : la situation ne détermine pas automatiquement la tyrannie.</p>
+  <table class="schema" style="margin-top:12px">
+    <tr><th></th><th>Zimbardo SPE (1971)</th><th>Reicher & Haslam BBC (2002)</th></tr>
+    <tr><td>Théorie de fond</td><td>Situationnisme behaviouriste</td><td>Identité sociale (Tajfel)</td></tr>
+    <tr><td>Rôle du groupe</td><td>Danger : conformisme, corruption</td><td>Ressource : résistance possible</td></tr>
+    <tr><td>Rôle des individus</td><td>Passifs, réactants</td><td>Acteurs, interprètes de la situation</td></tr>
+    <tr><td>Conditions de la tyrannie</td><td>Toute situation asymétrique</td><td>Faille du collectif + impuissance + illégitimité non reconnue</td></tr>
+    <tr><td>Critique majeure</td><td>Le Texier 2018 : biais de demande + biais expérimentateur</td><td>Conditions éthiques permissives (pas de risques réels)</td></tr>
+  </table>
 </div>
-</div><!-- sy4 -->
+
+<h3>2 — Browning (1992) vs Goldhagen (1996) : monstre ordinaire vs bourreau volontaire</h3>
+<div class="narrative">
+  <p><strong>Même objet :</strong> les massacres commis par le 101ème bataillon en Pologne. <strong>Browning :</strong> hommes ordinaires, peu nazifiés, enrôlés de force. Trapp leur laisse le choix — sans sanction. Explication situationnelle : surprise, soumission à l'autorité, conformisme, engrenage. Si vous ou moi avions été à leur place, nous aurions peut-être fait de même. <strong>Goldhagen :</strong> mêmes hommes, mais choix actifs, enthousiasme, initiatives. Antisémitisme d'élimination ancré culturellement. Eichmann harcelait ses supérieurs pour en faire plus. Explication intentionnaliste — responsabilité individuelle pleine. <strong>Synthèse (Tostain) :</strong> ni l'une ni l'autre seule. La situation crée les conditions, mais les individus les interprètent activement. Certains sont des monstres ordinaires, certains des bourreaux volontaires, la plupart entre les deux — transformés progressivement par leur propre participation. Arendt : même les "monstres ordinaires" sont responsables — ils ont choisi de démissionner de leur humanité.</p>
+</div>
+
+<h3>3 — Génocides vs Radicalisation</h3>
+<div class="narrative">
+  <p><strong>Commun :</strong> construction d'un ennemi → propagande en miroir → déshumanisation → cohésion groupale → Making a Virtue of Evil → désengagement moral → engrenage. <strong>Différences :</strong> (1) échelle : génocide = État organisateur ; radicalisation peut être individuelle ; (2) rôle de l'État : génocide = l'État organise ; radicalisation = l'État est souvent la cible ; (3) dimension identitaire choisie : plus centrale dans la radicalisation (quête de sens, fraternité — Ferret) ; dans le génocide, pression institutionnelle plus déterminante ; (4) temporalité : génocide = explosion rapide après longue préparation ; radicalisation = processus graduel sur des années. <strong>Conclusion :</strong> différence de degré, pas de nature. Les deux illustrent l'approche interactionniste de Tostain.</p>
+</div>
+
+<h3>4 — "Dans quelle mesure la situation détermine-t-elle les comportements déviants ?"</h3>
+<div class="narrative">
+  <p><strong>Pour le primat de la situation :</strong> Milgram (65% administrent des chocs sur injonction d'autorité, aucune corrélation avec la personnalité) ; 101ème bataillon (Browning : 4 mécanismes situationnels) ; effet témoin (Darley & Latané : le nombre de témoins détermine statistiquement l'aide). <strong>Limites :</strong> variabilité interindividuelle (les 12 du 101ème qui refusent, les Justes) ; Goldhagen (acteurs intentionnels, actifs) ; Ferret (deux individus aux mêmes conditions de radicalisation = trajectoires différentes) ; Reicher & Haslam (les gardiens BBC n'exploitent pas spontanément leur pouvoir) ; Le Texier 2018 (la "pente fatale automatique" de Zimbardo était prescrite) ; Levine et al. 2020 (la norme réelle en danger = intervenir). <strong>Synthèse interactionniste :</strong> la situation est un déterminant puissant mais pas absolu. Analyse à trois niveaux : individu + situation + système.</p>
+</div>
+
+<h3>5 — Le groupe : facteur de danger ou ressource de résistance ?</h3>
+<div class="narrative">
+  <p><strong>Danger :</strong> conformisme (Asch, 101ème bataillon) ; dilution de la responsabilité (Darley & Latané) ; esprit de corps (101ème) ; milices génocidaires (appartenance normative valorise les massacres). <strong>Ressource :</strong> BBC Prison Study (détenus identifiés à leur groupe se révoltent efficacement) ; contre-effet témoin (Levine & Crowther : identité partagée → plus de témoins = plus d'aide) ; terrain réel (Levine et al. : plus on est nombreux, plus on peut se soutenir) ; les Justes (réseaux de soutien social qui maintiennent des valeurs alternatives). <strong>Synthèse (Tajfel & Turner) :</strong> le groupe peut être positif ou négatif selon la structure des relations (perméabilité, légitimité, alternatives cognitives) et le degré d'identification. Ce qui détermine si le groupe devient instrument de tyrannie ou outil de résistance : l'idéologie qu'il porte et la capacité des individus à maintenir une pensée critique.</p>
+</div>
+
+<div class="note">💡 <strong>Checklist pour toute copie :</strong> ✅ Définir chaque concept · ✅ Citer les auteurs avec dates · ✅ Illustrer CM + TD dans le même paragraphe · ✅ Mentionner les limites de chaque théorie · ✅ Afficher l'approche interactionniste · ✅ Conclure sur la responsabilité individuelle · ❌ Ne pas faire un catalogue d'auteurs · ❌ Ne pas oublier que Zimbardo est fortement critiqué (Le Texier 2018) · ❌ Ne pas réduire à une seule explication.</div>
+</div><!-- sy-croises -->
 
 </div><!-- end tab-syntheses -->
 
@@ -1942,361 +1946,6 @@
   </div>
 </div>
 
-<!-- ==================== FICHES PORTES D ENTREE ==================== -->
-<div id="tab-fiches" class="tab-content">
-  <h2>🗂️ Fiches Portes d'entrée — Plans rédigés CM + TD intégrés</h2>
-  <div class="card lavender" style="margin-bottom:18px;">
-    <p><strong>Comment utiliser ces fiches :</strong> chaque fiche est une réponse complète à "Que dire si on me pose une question sur X ?". Elle intègre la théorie du CM <em>et</em> les exemples des TD, propose un plan entièrement rédigé, et indique les liens avec les autres thèmes.</p>
-  </div>
-  <div class="sub-tab-bar">
-    <button class="sub-tab-btn active" onclick="showFiche('fi-ge',this)">🌍 Génocides</button>
-    <button class="sub-tab-btn" onclick="showFiche('fi-ty',this)">⚖️ Tyrannie</button>
-    <button class="sub-tab-btn" onclick="showFiche('fi-ai',this)">🤝 Absence d'aide</button>
-    <button class="sub-tab-btn" onclick="showFiche('fi-ra',this)">🔥 Radicalisation</button>
-    <button class="sub-tab-btn" onclick="showFiche('fi-vi',this)">🏛️ Viol &amp; Violences</button>
-    <button class="sub-tab-btn" onclick="showFiche('fi-dev',this)">🌀 Déviance (général)</button>
-    <button class="sub-tab-btn" onclick="showFiche('fi-croises',this)">🔗 Sujets croisés</button>
-  </div>
-  <div id="fi-ge" class="fiche-panel" style="display:block"><h2>🌍 Fiche — Les dynamiques génocidaires</h2>
-<div class="card rose">
-  <h4>🃏 Carte mentale — Ce qu'il faut avoir en tête AVANT de rédiger</h4>
-  <div class="two-col">
-    <div>
-      <strong>Définition clé (Lemkin, 1944)</strong><br>Destruction intentionnelle d'un groupe national, ethnique, racial ou religieux.<br><br>
-      <strong>Cas de référence (TD)</strong><br>Rwanda 1994 : ~800 000 Tutsis en 100 jours. Colonisation belge → clivage social → clivage ethno-racial (hypothèse hamitique) → inversion des dominations (1959/1962) → instrumentalisation politique → 6 avril 1994.
-    </div>
-    <div>
-      <strong>Grille d'analyse en 3 niveaux (Semelin)</strong><br>· Macro : conditions historiques/politiques<br>· Méso : idéologie de groupe, propagande<br>· Micro : mécanismes psychologiques individuels<br><br>
-      <strong>Débat central</strong><br>Monstre ordinaire (Browning/Arendt) vs Bourreau volontaire (Goldhagen) → synthèse : approche interactionniste (Tostain)
-    </div>
-  </div>
-  <div class="note" style="margin-top:10px;">⚡ <strong>Fil conducteur :</strong> un génocide ne surgit pas soudainement. C'est un processus construit, en plusieurs étapes, à plusieurs niveaux. Les mécanismes psychosociaux du cours (déshumanisation, soumission, conformisme, engrenage) sont les rouages réels de ces massacres.</div>
-</div>
-
-<h3>I — Les conditions macro : de la distinction au clivage ethno-racial (TD)</h3>
-<div class="narrative">
-  <p>Au Rwanda, la distinction Hutu/Tutsi n'est pas originellement raciale. Avant la colonisation, il s'agit d'une <strong>hiérarchie sociale fluide</strong> — la mobilité ascendante par le mérite est possible, la distinction est acceptable parce qu'elle paraît méritocratique. La colonisation belge bascule tout : elle rigidifie les identités au moyen de l'<strong>hypothèse hamitique</strong> (les Tutsis = race étrangère venue d'Éthiopie ; les Hutus = les "vrais Rwandais" bantous). Ce qui était un clivage social devient un <strong>clivage ethno-racial figé</strong>, inscrit dans les cartes d'identité. L'essentialisation des rapports fabrique un "nous" et un "eux" imperméables.</p>
-  <p>Dans les années 1950, les velléités indépendantistes tutsis favorisent un retournement : les colonisateurs soutiennent les Hutus. L'indépendance (1962) consacre le basculement. Les Tutsis fuient dans les pays voisins et fondent le FPR en 1987. La hantise hutue d'un "retour des Tutsis" s'installe. C'est le paradoxe de Semelin : les génocides sont souvent perpétrés par des États <em>fragiles</em>. Habyarimana, sous pression (FPR, accords d'Arusha), craint de perdre le pouvoir. La désignation d'un ennemi intérieur lui permet de consolider son camp. Un État fort n'a pas besoin de génocide ; c'est la fragilité qui génère la violence radicale. À cela s'ajoute la passivité de la communauté internationale (France, rapport Duclert ; ONU à Srebrenica) — signal d'impunité pour les génocidaires.</p>
-</div>
-
-<h3>II — Le niveau méso : la machine idéologique et opérationnelle (TD — Azoulay)</h3>
-<div class="narrative">
-  <p><strong>Niveau idéologique :</strong> désignation d'un coupable (racialisation des difficultés économiques) → amorçage génocidaire par le discours ("ils sont une menace, cela justifie de s'en prendre à eux") → <strong>propagande en miroir</strong> ("les Tutsis vont nous exterminer, tuons-les avant d'être tués") → endoctrinement via la RTLM (discours de haine, banalisation des massacres) → <strong>déshumanisation</strong> (les Tutsis appelés <em>inyenzi</em>, cancrelats) → <strong>culture de l'impunité</strong> (condamnés pour vol de vaches, pas pour meurtre — inversion normative). Finalité : rendre non-évident le passage à l'acte… évident.</p>
-  <p><strong>Niveau opérationnel :</strong> milices d'auto-défense (machettes distribuées aux civils) → Interahamwe (1992, jeunesses embrigadées) → Hutu Power (1993, extrémistes fédérés) → éviction des Hutus modérés (assassinats de personnalités politiques) → capture/massacre des casques bleus de la MINUAR. Tout est en place avant le 6 avril 1994. Les entrepreneurs identitaires (Semelin) — intellectuels, politiques, journalistes — construisent et diffusent le discours de haine. La logique d'idée d'Arendt opère : on adopte une prémisse idéologique sans la questionner et on en déroule mécaniquement les conséquences.</p>
-</div>
-
-<h3>III — Le niveau micro : pourquoi des individus ordinaires participent aux massacres (CM)</h3>
-<div class="narrative">
-  <p><strong>Le 101ème bataillon (Browning, 1992) :</strong> 500 hommes ordinaires, peu nazifiés, enrôlés de force, commandés par le Major Trapp (apprécié, ému, qui leur laisse le choix de refuser). Une douzaine refusent le premier jour — sans sanction. Presque plus personne ne refusera ensuite. Bilan : 38 000 Juifs exécutés, 45 000 déportés en 14 mois. Les <strong>4 mécanismes situationnels de Browning</strong> : (1) effet de surprise (pas le temps de réfléchir) ; (2) soumission à une autorité légitime (état agentique, cf. Milgram) ; (3) dynamique de groupe (conformisme, esprit de corps — "ne pas se décharger" est ressenti comme une trahison) ; (4) engrenage progressif (renoncer = admettre que tout était inutile et mal). À cela s'ajoutent les <strong>mécanismes de défense</strong> : évitement de la responsabilité ("je n'ai pas le choix"), réinterprétation de la réalité (haine a posteriori des victimes), inversion des valeurs morales (ceux qui refusent deviennent des lâches).</p>
-  <p><strong>La banalité du mal (Arendt) :</strong> le mal s'inscrit dans des activités routinières chez des individus ayant abandonné leur pouvoir de penser. Eichmann résout des problèmes techniques sans jamais nommer les Juifs dans ses documents. La "camisole de la logique" : on adopte une prémisse idéologique sans la questionner et on en déroule les conséquences mécaniquement. <strong>Le désengagement moral (Bandura) :</strong> justification morale ("noble cause"), euphémisation du langage (cancrelats), déplacement de responsabilité ("j'obéis aux ordres"), déshumanisation de la victime. Au Rwanda : condamnés pour vol de vaches, pas pour meurtre — le filtre moral habituel est désactivé. <strong>Mécanismes spécifiques du passage à l'acte au Rwanda (Azoulay/TD) :</strong> déshumanisation des victimes (mise à distance psychologique + rationalisation a posteriori) ; inversion de la hiérarchie normative (punir le vol, pas le meurtre) ; sentiment de toute-puissance sur la victime (liberté totale de transgression, rage, absence totale d'empathie).</p>
-</div>
-
-<h3>IV — Le débat : monstres ordinaires vs bourreaux volontaires (CM)</h3>
-<div class="narrative">
-  <p><strong>Goldhagen (1996) :</strong> les membres du 101ème bataillon faisaient des choix actifs, prenaient des initiatives, étaient enthousiastes. Eichmann harcelait ses supérieurs pour en obtenir toujours plus. Thèse intentionnaliste : antisémitisme d'élimination ancré culturellement, responsabilité individuelle pleine et entière. <strong>Reicher, Haslam & Rath (2008) — Making a Virtue of Evil :</strong> 5 étapes (identification au groupe → exclusion de l'exogroupe → perception de la menace → représentation du groupe comme seul vertueux → faire du mal une vertu). Les acteurs ne subissent pas — ils choisissent activement, ils célèbrent leurs actes comme des vertus. <strong>Synthèse interactionniste (Tostain) :</strong> ni pur situationnisme ni pur intentionnalisme. La personne et la situation se transforment mutuellement. La responsabilité individuelle reste entière (Arendt : ils ont choisi de démissionner de leur humanité) — mais les conditions sociales et idéologiques sont déterminantes.</p>
-</div>
-<div class="card mint">
-  <h4>🔗 Liens avec les autres thèmes</h4>
-  <ul>
-    <li><strong>↔ Tyrannie :</strong> les 6 facteurs de la pente fatale de Zimbardo (surprise, dés-individuation, diffusion de responsabilité, obéissance, conformisme, tolérance passive) se retrouvent dans les dynamiques génocidaires, mais articulés à une idéologie construite.</li>
-    <li><strong>↔ Radicalisation :</strong> même architecture (désignation de l'ennemi, propagande en miroir, déshumanisation, Making a Virtue of Evil, engrenage). Différence : échelle, rôle de l'État, dimension choisie plus centrale dans la radicalisation.</li>
-    <li><strong>↔ Absence d'aide :</strong> la passivité internationale (ONU, France) = effet témoin à l'échelle macro. Dilution de la responsabilité entre États.</li>
-    <li><strong>↔ Déviance :</strong> le génocide est présenté par ses auteurs non comme une déviance mais comme une norme — conformité à un autre système de valeurs. Illustre la relativité sociale de la déviance.</li>
-  </ul>
-</div>
-<div class="note">📚 <strong>Auteurs incontournables :</strong> Lemkin · Semelin (2003) · Browning (1992) · Arendt (banalité du mal, camisole de la logique) · Goldhagen (1996) · Reicher, Haslam & Rath (2008, Making a Virtue of Evil) · Bandura (désengagement moral) · Milgram (état agentique) · Azoulay/TD (dynamiques idéologique + opérationnelle Rwanda) · Hypothèse hamitique · RTLM · Interahamwe · Hutu Power · Rapport Duclert.</div></div>
-  <div id="fi-ty" class="fiche-panel" style="display:none"><h2>⚖️ Fiche — Les comportements tyranniques</h2>
-<div class="card rose">
-  <h4>🃏 Carte mentale</h4>
-  <div class="two-col">
-    <div>
-      <strong>Définition (Zimbardo)</strong><br>Système social inégal comprenant le pouvoir arbitraire et oppresseur d'un groupe sur un autre.<br><br>
-      <strong>Expériences de référence (CM)</strong><br>· Stanford Prison Experiment (SPE), Zimbardo 1971 — CRITIQUE SÉVÈRE Le Texier 2018<br>· BBC Prison Study, Reicher & Haslam 2002
-    </div>
-    <div>
-      <strong>Débat central</strong><br>Zimbardo : c'est la <em>situation</em> qui crée la tyrannie (mécanisme passif, pente fatale).<br>Reicher & Haslam : c'est l'<em>identité sociale</em> et les dynamiques interactives entre groupes qui déterminent si la tyrannie ou la résistance émergent.<br><br>
-      <strong>Théorie de fond</strong><br>Identité sociale de Tajfel & Turner
-    </div>
-  </div>
-  <div class="note" style="margin-top:10px;">⚡ <strong>Fil conducteur :</strong> la même situation peut produire tyrannie ou résistance selon la structure des relations entre groupes (perméabilité, légitimité, sécurité, alternatives cognitives). La tyrannie n'est pas une fatalité situationnelle.</div>
-</div>
-
-<h3>I — L'approche situationniste : Zimbardo (1971) et ses 6 facteurs</h3>
-<div class="narrative">
-  <p>Contexte : révoltes dans les prisons américaines fin des années 1960, dont Attica (40 morts). Protocole : sous-sol de Stanford, 15$/jour pour 2 semaines. Répartition aléatoire en gardiens (uniforme kaki, matraque, lunettes teintées) et détenus (arrêtés à domicile par de vrais policiers, dénudés, douchés, bonnet en bas nylon, blouse courte laissant entrevoir l'intimité, désignés par matricule — processus délibéré de déshumanisation). Consigne aux gardiens : pas de violence physique.</p>
-  <p>Déroulement : jour 1 calme. Jour 2 : révolte des détenus (bonnet arraché, barricades) → répression par les gardiens (extincteurs, isolement, bonnes/mauvaises cellules, punition collective, réveils nocturnes, pompes forcées, nettoyage toilettes à main nue, permission obligatoire pour uriner). Certains gardiens deviennent sadiques. Des détenus développent troubles psychosomatiques (tics, eczéma, dépression). Arrêt au 6ème jour : vidéos révèlent sévices sexuels ; la doctorante Maslach (future épouse de Zimbardo) exige l'arrêt. En réalité : Zimbardo avait obtenu ce qu'il voulait, et les participants commençaient à contacter des avocats.</p>
-  <p>Pour Zimbardo : pas la personnalité des gardiens qui produit la tyrannie (tests de personnalité normaux) mais la <strong>situation</strong>. Les <strong>6 facteurs de la pente fatale</strong> : (1) faire le premier pas sans réfléchir (effet de surprise) ; (2) dés-individuation de soi (porter un uniforme, jouer un rôle) ; (3) diffusion/déresponsabilisation (l'autorité prend en charge la responsabilité morale, cf. Milgram) ; (4) obéissance à l'autorité et idéologie sous-tendue ("faire avancer la science") ; (5) conformité aux normes du groupe (peur d'exclusion) ; (6) tolérance passive au mal (inaction, indifférence, cf. Arendt).</p>
-</div>
-
-<h3>II — La remise en cause sévère : Le Texier (2018)</h3>
-<div class="narrative">
-  <p><strong>Absence de publication scientifique :</strong> aucun article → pas de vérification externe, pas de standards respectés. Critiques antérieures : Fromm (2/3 des gardiens non-sadiques — l'expérience prouverait qu'on ne PEUT PAS transformer n'importe qui en sadique), Festinger (pas de nouvelles connaissances, objectif de spectacle), Carnahan & Macfarland (les sujets répondant à une annonce "étude de vie en prison" ont des profils plus autoritaires, machiavéliques, dominants — biais de sélection massif).</p>
-  <p><strong>Critique centrale de Le Texier :</strong> Zimbardo a <em>prescrit</em> dès le départ aux gardiens ce qu'il voulait obtenir. "Il s'agit de développer l'ennui, la frustration, la peur, l'arbitraire, l'impuissance chez les détenus." Il les encourageait à être durs, les réprimandait s'ils ne l'étaient pas. Il prescrivait les réveils nocturnes, les exercices à 6h du matin. Deux biais : (1) biais de demande (Orne) — les gardiens répondaient aux attentes implicites de Zimbardo, pas à la situation ; (2) biais expérimentateur (Rosenthal) — Zimbardo construisait ce qu'il prétendait observer. "Ce n'est pas une situation néfaste qui a créé la déshumanisation, mais la déshumanisation prescrite par Zimbardo qui a créé la situation néfaste." C'est l'inverse. Deux limites structurelles : conception behaviouriste (sujets réactants passifs, pas d'agentivité) ; manque de réalisme (vraie prison = durée incomparablement plus longue, risques réels). Ce qu'on peut garder : les mécanismes (rôles sociaux, conformisme) restent pertinents, et l'expérience a mis en lumière les problématiques carcérales réelles.</p>
-</div>
-
-<h3>III — L'approche interactionniste : BBC Prison Study (Reicher & Haslam, 2002)</h3>
-<div class="narrative">
-  <p>Fondé sur la <strong>théorie de l'identité sociale (Tajfel)</strong> : les individus n'agissent pas automatiquement selon les attentes de leur groupe — seulement si l'appartenance est <em>internalisée</em>. Deux hypothèses : H1 = les gardiens (groupe dominant) s'identifient d'emblée et imposent leur pouvoir. H2 = les prisonniers ne contestent que si les relations sont perçues comme imperméables et peu légitimes. Pour la résistance, 4 facteurs : <strong>imperméabilité</strong> (frontières fermées entre groupes) + <strong>identification</strong> forte au groupe dominé + <strong>instabilité + illégitimité</strong> + <strong>alternatives cognitives</strong> (projet de transformation).</p>
-  <p>Protocole (Décembre 2001, 15 hommes, 8 jours, 6 gardiens + 9 détenus). 3 manipulations : (1) perméabilité initialement ouverte puis fermée ; (2) jour 5 : légitimité remise en cause ("pas de différence de personnalité gardiens/détenus") ; (3) jour 5 : introduction d'un nouveau prisonnier ex-syndicaliste. Résultats : jours 1-3, gardiens hésitent, détenus développent forte identité de groupe et contestent. Jour 6 : révolte, les détenus investissent le quartier des gardiens. Jour 6-8 : tentative d'organisation horizontale → les anciens leaders marginalisés imposent un <strong>régime tyrannique plus fort qu'avant</strong>. Les participants s'y soumettent par défaut — faiblesse du collectif. Conclusion de Reicher & Haslam : "C'est l'éclatement des groupes et l'impuissance qui créent les conditions dans lesquelles la tyrannie peut triompher."</p>
-</div>
-<div class="card mint">
-  <h4>🔗 Liens avec les autres thèmes</h4>
-  <ul>
-    <li><strong>↔ Génocides :</strong> les 6 facteurs de Zimbardo fonctionnent dans les deux contextes, mais au Rwanda ils s'articulent à une idéologie construite — pas un simple effet situationnel.</li>
-    <li><strong>↔ Absence d'aide :</strong> tolérance passive (6ème facteur Zimbardo) et dilution de responsabilité (Darley & Latané) : même logique d'inaction par conformisme et attentisme.</li>
-    <li><strong>↔ Radicalisation :</strong> le syndicaliste de la BBC Prison Study catalyse la résistance — même logique que le recruteur dans la radicalisation (leader charismatique qui propose un projet identitaire alternatif).</li>
-    <li><strong>↔ Comparaison Zimbardo/Milgram :</strong> même quartier, même école. Tous deux situationnistes, tous deux critiqués éthiquement et méthodologiquement. Milgram : soumission à l'autorité (état agentique). Zimbardo : tyrannie par pente fatale.</li>
-  </ul>
-</div>
-<div class="note">📚 <strong>Auteurs incontournables :</strong> Zimbardo (1971, SPE, 6 facteurs, Lucifer Effect) · Le Texier (2018, critique radicale) · Fromm, Festinger, Carnahan & Macfarland (critiques antérieures) · Orne (biais de demande) · Rosenthal (biais expérimentateur) · Reicher & Haslam (2002, BBC Prison Study) · Tajfel & Turner (identité sociale) · Milgram (état agentique, lien structurel).</div></div>
-  <div id="fi-ai" class="fiche-panel" style="display:none"><h2>🤝 Fiche — L'absence d'aide aux personnes en danger</h2>
-<div class="card rose">
-  <h4>🃏 Carte mentale</h4>
-  <div class="two-col">
-    <div>
-      <strong>Fait divers fondateur</strong><br>Kitty Genovese, 13 mars 1964, New York — agression mortelle, "38 témoins" inactifs. <em>Mais :</em> récit largement inexact (Manning, Levine & Collins, 2007) — 6 témoins réels, certains ont agi.<br><br>
-      <strong>Fait divers français</strong><br>Narumi Kurosaki, Besançon, 2016 — 11 étudiants réveillés, quasi aucun n'intervient.
-    </div>
-    <div>
-      <strong>Concept clé : effet spectateur / témoin</strong><br>Darley & Latané (1970) : plus les témoins sont nombreux, moins la probabilité d'intervention est forte, et plus le délai est long.<br><br>
-      <strong>Évolutions importantes</strong><br>· Levine & Crowther (2008, 2012) : identité sociale → contre-effet témoin<br>· Fisher et al. (2011) : méta-analyse — effet modéré, inversé en danger réel<br>· Levine, Philpot & Kovalenko (2020) : la norme réelle est d'intervenir
-    </div>
-  </div>
-  <div class="note" style="margin-top:10px;">⚡ <strong>Fil conducteur :</strong> l'effet témoin n'est pas une loi absolue. Il dépend de la structure des relations entre témoins et victime (identité partagée, lien social), de la nature du danger, et du contexte social. La norme réelle, en situation dangereuse, est d'intervenir.</div>
-</div>
-
-<h3>I — Le modèle cognitif de Darley & Latané (1970)</h3>
-<div class="narrative">
-  <p>Darley & Latané écartent les explications moralisatrices (la grande ville déshumanise). Ils proposent un processus décisionnel en <strong>5 étapes</strong> : (1) constater qu'il se passe quelque chose ; (2) interpréter la situation comme urgente — si personne ne réagit, ignorance plurielle ("chacun regarde les autres, pense qu'ils ont une information supplémentaire, conclut que c'est pas si grave") ; (3) décider que c'est de ma responsabilité — <strong>dilution de la responsabilité</strong> (plus de témoins = moins chacun se sent responsable) ; (4) évaluer comment intervenir ; (5) fournir de l'aide.</p>
-  <p><strong>Expérience 1 — crise d'épilepsie simulée (interphone, 1970) :</strong> 2 participants → 85% intervention / 52s. 3 participants → 62% / 93s. 6 participants → 31% / 166s. Aucune corrélation avec les traits de personnalité (machiavélisme, autoritarisme, anomie) — c'est la situation qui détermine, pas la personne.</p>
-  <p><strong>Expérience "Lady in Distress" (1969) :</strong> sujet isolé → 70% d'aide. Compère passif présent → 7% seulement. Deux sujets naïfs ne se connaissant pas → 40%. Deux amis → 70%. Le lien social entre témoins efface l'influence inhibitrice. <strong>Double mécanisme :</strong> (1) influence inhibitrice (les autres n'interviennent pas → je n'interviens pas) ; (2) distorsion de la réalité (on se convainc que ce n'est pas si grave). Important : les sujets qui n'interviennent pas ne sont pas apathiques — ils tremblent, suent, sont en état d'indécision. Ce n'est pas de l'indifférence, c'est un conflit non résolu.</p>
-</div>
-
-<h3>II — Le contre-effet témoin : Levine & Crowther (2008, identité sociale)</h3>
-<div class="narrative">
-  <p>Levine & Crowther s'appuient sur la théorie de l'identité sociale de Tajfel. Deux hypothèses : H1 = sans identité partagée avec la victime, effet témoin classique (plus de témoins = moins d'aide). H2 = avec identité partagée, contre-effet témoin (plus de témoins = plus d'aide). <strong>Expérience Lancaster (2008) :</strong> un professeur réprimande sévèrement une étudiante. Les sujets repassent devant la porte et l'entendent sangloter. Résultats : femme seule → 37%, homme seul → 37% (pas de différence de genre à seul). Groupe unisexe femmes → 75% (identité de genre partagée avec la victime). Groupe unisexe hommes → 16% (pas d'identité partagée = effet témoin classique). Groupe mixte femme minoritaire → 27% (se décharge sur les hommes). Groupe mixte homme minoritaire → 76% (norme de chevalerie + <strong>effet brebis galeuse</strong> : vouloir restaurer l'image du groupe face à l'attitude choquante du professeur — montrer que "nous, on se comporte correctement").</p>
-</div>
-
-<h3>III — La méta-analyse de Fisher et al. (2011) et la réalité de terrain</h3>
-<div class="narrative">
-  <p>Méta-analyse sur 53 études (1960-2010) : l'effet témoin existe mais est <strong>modéré</strong> (corrélation -0,35). Facteurs qui l'inversent : (1) <strong>danger objectivement grave</strong> → contre-effet témoin (plus on est nombreux, plus on peut se soutenir pour intervenir et neutraliser l'agresseur — question pratique) ; (2) sexe des témoins : hommes interviennent davantage en cas de danger physique ; (3) l'effet est plus fort en laboratoire qu'en terrain réel.</p>
-  <p><strong>Levine, Philpot & Kovalenko (2020) :</strong> analyse de milliers de vidéos de surveillance. La <strong>norme réelle est d'intervenir</strong> (contre l'idée reçue des témoins apathiques). Facteurs prédictifs : lien social existant avec la victime ou l'agresseur, appartenance multiple (identités conjointes multiplient les raisons d'intervenir). Étude match Manchester United : T-shirt Man U = 70% d'aide, T-shirt neutre ou Liverpool = ~25%. Leçon pratique : si en danger, interpellez quelqu'un individuellement pour casser la dilution de responsabilité.</p>
-</div>
-
-<h3>IV — Le contrepoint : l'affaire Genovese revisitée (Manning, Levine & Collins, 2007)</h3>
-<div class="narrative">
-  <p>Les auteurs révèlent : pas 38 témoins mais ~6 ; pas 3 attaques mais 2 ; la scène était ambiguë au départ ; plusieurs témoins ont tenté de contacter la police (le 911 n'existait pas) ; un témoin a crié contre l'agresseur, le faisant fuir. <strong>Le mythe des 38 témoins apathiques est largement faux.</strong> Pourquoi ce mythe s'est-il diffusé en psychologie sociale ? Parce qu'il réunissait tous les ingrédients d'une belle histoire scientifique : récit dramatique + leçon claire + morale simple. Il entrait en résonance avec les biais de la discipline (tendance à expliquer par la situation et le groupe). Ce cas illustre un méta-point : la psychologie sociale est elle-même soumise aux processus qu'elle étudie.</p>
-</div>
-<div class="card mint">
-  <h4>🔗 Liens avec les autres thèmes</h4>
-  <ul>
-    <li><strong>↔ Tyrannie :</strong> tolérance passive (6ème facteur Zimbardo) et dilution de responsabilité (Darley & Latané) partagent la même logique d'inaction renforcée par conformisme.</li>
-    <li><strong>↔ Génocides :</strong> la passivité internationale face au Rwanda = effet témoin macroscopique (dilution de responsabilité entre États, ignorance plurielle).</li>
-    <li><strong>↔ Déviance :</strong> la non-assistance à personne en danger est une infraction pénale. C'est l'exemple d'un comportement déviant produit par des mécanismes situationnels, non par une malveillance.</li>
-    <li><strong>↔ Identité sociale :</strong> le contre-effet témoin de Levine & Crowther connecte ce chapitre à la BBC Prison Study — dans les deux cas, l'identité groupale est le moteur de l'action collective.</li>
-  </ul>
-</div>
-<div class="note">📚 <strong>Auteurs incontournables :</strong> Darley & Latané (1970, modèle 5 étapes, expériences) · Manning, Levine & Collins (2007, révision affaire Genovese) · Levine & Crowther (2008, 2012, identité sociale, Lancaster) · Fisher et al. (2011, méta-analyse) · Levine, Philpot & Kovalenko (2020, vidéos, norme d'intervention) · Tajfel & Turner (identité sociale) · Faits divers : Genovese (1964) + Kurosaki (2016, Besançon).</div></div>
-  <div id="fi-ra" class="fiche-panel" style="display:none"><h2>🔥 Fiche — La radicalisation</h2>
-<div class="card rose">
-  <h4>🃏 Carte mentale</h4>
-  <div class="two-col">
-    <div>
-      <strong>Définition</strong><br>Processus par lequel un individu en vient à adopter des idéologies extrêmes et à considérer comme légitime le recours à la violence pour les imposer.<br><br>
-      <strong>Débat central (TD)</strong><br>Déviance sociale (transgression de normes) ou socialisation radicale (conformité à un autre système normatif) ?
-    </div>
-    <div>
-      <strong>Théories majeures</strong><br>· Moghaddam (2005) : escalier vers le terrorisme<br>· Ferret (2017) : subjectivation individuelle, indéterminisme<br>· Crettiez : trois niveaux de radicalisation<br>· Burgat : contexte géopolitique<br><br>
-      <strong>Enjeu</strong><br>Approche interactionniste (ni profil pathologique individuel, ni pur situationnisme)
-    </div>
-  </div>
-  <div class="note" style="margin-top:10px;">⚡ <strong>Fil conducteur :</strong> la radicalisation partage sa structure profonde avec les dynamiques génocidaires (construction d'un ennemi, propagande en miroir, cohésion de groupe) mais s'en distingue par sa dimension identitaire et choisie plus centrale. Ce n'est pas une pathologie individuelle.</div>
-</div>
-
-<h3>I — Déviance ou socialisation radicale ? Le débat fondateur (TD)</h3>
-<div class="narrative">
-  <p>Question fondamentale : la radicalisation est-elle une <strong>déviance sociale</strong> (transgression des normes dominantes) ou une <strong>socialisation radicale</strong> (conformité parfaite à un système normatif alternatif) ? Cette distinction détermine comment on pense la prévention. Si c'est une déviance → réponse pénale et resocialisation. Si c'est une socialisation radicale → il faut s'attaquer aux conditions qui rendent ce groupe de référence attrayant (désaffiliation, marginalisation, discrimination perçue, contexte géopolitique).</p>
-  <p>Crettiez distingue trois niveaux : radicalisation <strong>cognitive</strong> (adoption d'une idéologie extrême sans passage à l'acte), radicalisation <strong>comportementale</strong> (adoption de pratiques radicales), radicalisation <strong>violente</strong> (recours à la violence). Ces trois niveaux ne se superposent pas toujours — on peut être radicalisé cognitivement sans jamais passer à la violence. Des individus peu idéologisés peuvent commettre des actes violents par dynamique groupale.</p>
-</div>
-
-<h3>II — Le modèle de Moghaddam (2005) : l'escalier vers le terrorisme</h3>
-<div class="narrative">
-  <p>Modèle en 6 étapes, fondé sur la frustration–agression et la théorie de l'identité sociale : <strong>Rez-de-chaussée :</strong> conditions objectives perçues comme injustes (pauvreté, discrimination, exclusion). Tout le monde y vit, peu montent. <strong>1er étage :</strong> déplacement de l'agressivité → hostilité envers un groupe cible désigné. <strong>2ème étage :</strong> désengagement moral (Bandura) → justification de la violence contre l'ennemi désigné. <strong>3ème étage :</strong> catégorisation sociale intense → identification forte au groupe radical, exclusion absolue de l'exogroupe. <strong>4ème étage :</strong> légitimation de la violence → la violence devient vertueuse (cf. Making a Virtue of Evil). <strong>5ème étage :</strong> passage à l'acte terroriste, inhibition de l'empathie. À chaque étage, certains restent, certains montent. Ce qui détermine qui monte : intensité des griefs perçus, qualité du recrutement, disponibilité d'un groupe radical, facteurs individuels (besoin de sens, de cohésion, de reconnaissance).</p>
-</div>
-
-<h3>III — Ferret (2017) et la subjectivation individuelle</h3>
-<div class="narrative">
-  <p>Limite cruciale aux approches structurelles : deux individus exposés aux mêmes facteurs de risque peuvent suivre des trajectoires totalement différentes. L'un se radicalise, l'autre non. L'<strong>indéterminisme de la trajectoire individuelle</strong> est réel. Pour Ferret, la radicalisation est un processus de <strong>subjectivation</strong> — le sujet construit activement un sens à sa trajectoire, négocie son identité entre des appartenances multiples et contradictoires. Ce n'est pas simplement une réponse à des conditions objectives. C'est un projet identitaire, une quête de sens et de cohérence. Rejoint la position interactionniste : la personne <em>et</em> la situation se transforment mutuellement.</p>
-</div>
-
-<h3>IV — Les parallèles structurels avec les génocides</h3>
-<div class="narrative">
-  <p><strong>Commun :</strong> construction d'un ennemi (racialisation/désignation de l'Occident) → propagande en miroir ("ils nous menacent, nous nous défendons") → déshumanisation de l'ennemi (cancrelats / "kuffar") → cohésion groupale forte et exclusive → légitimation de la violence (Making a Virtue of Evil) → engrenage progressif. <strong>Différences :</strong> (1) échelle et organisation : génocide = État organisateur ; radicalisation peut être individuelle ou en petit groupe ; (2) rôle de l'État : dans le génocide, l'État organise ; dans la radicalisation, l'État est souvent la cible ; (3) dimension identitaire choisie : plus centrale dans la radicalisation (quête identitaire active — sens, appartenance, fraternité) ; dans le génocide, la pression institutionnelle est plus déterminante (même si bourreaux volontaires existent dans les deux cas) ; (4) temporalité : génocide = explosion rapide après longue préparation ; radicalisation = processus graduel sur des années.</p>
-</div>
-<div class="card mint">
-  <h4>🔗 Liens avec les autres thèmes</h4>
-  <ul>
-    <li><strong>↔ Génocides :</strong> même architecture profonde. Différence de degré, pas de nature.</li>
-    <li><strong>↔ Tyrannie :</strong> le recruteur radical joue le même rôle catalyseur que le syndicaliste de la BBC Prison Study.</li>
-    <li><strong>↔ Déviance :</strong> est-ce une déviance ou une socialisation radicale ? Les deux perspectives sont nécessaires — transgression des normes dominantes ET conformité à des normes alternatives.</li>
-    <li><strong>↔ Désengagement moral (Bandura) :</strong> mécanisme central dans la radicalisation ET le génocide.</li>
-  </ul>
-</div>
-<div class="note">📚 <strong>Auteurs incontournables :</strong> Moghaddam (2005, escalier 6 étapes) · Ferret (2017, subjectivation, indéterminisme) · Crettiez (trois niveaux : cognitive, comportementale, violente) · Burgat (contexte géopolitique) · Reicher, Haslam & Rath (2008, Making a Virtue of Evil) · Bandura (désengagement moral) · Tajfel & Turner (identité sociale).</div></div>
-  <div id="fi-vi" class="fiche-panel" style="display:none"><h2>🏛️ Fiche — Évolution des réactions sociales et pénales face au viol et aux violences conjugales</h2>
-<div class="card rose">
-  <h4>🃏 Carte mentale</h4>
-  <div class="two-col">
-    <div>
-      <strong>Notion centrale</strong><br>Représentations sociales : connaissances de sens commun socialement élaborées, créant une réalité partagée, guidant l'action, sous-tendues par des valeurs et des normes.<br><br>
-      <strong>Source principale (TD)</strong><br>Vigarello, <em>Histoire du viol</em> + TD Azoulay/Tostain sur l'évolution historique des réactions sociales et pénales.
-    </div>
-    <div>
-      <strong>Fil historique</strong><br>Ancien Régime (rapt d'honneur) → Révolution → 19ème s. → Procès d'Aix (1978) → Loi 1980 (qualification crime) → 2018/2021 (ajouts législatifs)<br><br>
-      <strong>Question clé sur le consentement</strong><br>Le Magueresse (pour) vs MacKinnon (contre) : introduire la notion de consentement dans la loi ?
-    </div>
-  </div>
-  <div class="note" style="margin-top:10px;">⚡ <strong>Fil conducteur :</strong> la définition légale et sociale du viol n'est pas universelle ni stable. Elle est le produit de représentations sociales historiquement situées. Comprendre son évolution, c'est comprendre comment les normes sociales se construisent et se transforment — et comment les comportements "déviants" sont redéfinis.</div>
-</div>
-
-<h3>I — L'Ancien Régime : le viol comme rapt d'honneur (Vigarello)</h3>
-<div class="narrative">
-  <p>En principe, le viol est réprimé dans toute société — aucune société ne peut ériger comme norme qu'une partie de la population ne soit pas protégée. Mais sous l'Ancien Régime (16ème-17ème s.), la peine théorique est très forte (mort possible) et quasi jamais appliquée. L'hiatus entre sévérité de la loi et impunité de fait est total. Pourquoi ? Les violences contre les femmes sont "noyées" dans la société : ce qui compte, c'est l'<strong>atteinte aux biens</strong>, non à la personne. La société de pénurie protège ses propriétés — Jean Valjean est condamné pour avoir volé du pain.</p>
-  <p>Le viol est assimilé à un <strong>rapt</strong> — voler l'honneur <em>du père ou du mari</em>, pas de la femme elle-même. La femme n'est pas sujet de droit. Deux types de rapt : de séduction (promesses mensongères) et de violence. La honte est contagieuse et associée à la victime. Le viol est lu sous le prisme de l'impudeur et de la morale, non de la violence. On doute : "elle devait avoir les moyens de résister — si pas de résistance, alors consentement." Minimisation systématique : chez les aristocrates, jeu libertin. Certains auteurs portent plainte contre leurs victimes ("c'est elle qui m'a séduit"). Dans le cas "Force du sang" (noble viole une jeune fille), la solution est le <em>mariage</em> — pour restaurer l'honneur de la famille, pas pour sanctionner le violeur.</p>
-</div>
-
-<h3>II — 19ème siècle et prémices du changement</h3>
-<div class="narrative">
-  <p>Juste avant la Révolution, début de changements : affaire Rosekeller (1768) — abus d'un aristocrate → arrangement financier, assimilation du violeur à un "satyriasis" (trouble d'érection permanente). Le viol devient non plus une faute morale mais une <strong>menace contre l'ordre social</strong>. Au 19ème s. : (1) distinction des violences sexuelles (physique, psychologique, morale) ; (2) augmentation des plaintes et condamnations — mais tout le poids de la honte reste sur la femme ; (3) évolution du profil stéréotypé du violeur : d'abord homme de pouvoir, puis marginal/vagabond/"hors modernité", puis quelqu'un atteint d'une perversion, puis n'importe qui. Crime majeur autrefois = crime de sang. Dans la modernité = le viol. Cette inversion reflète un changement de valeurs fondamentales : l'intégrité de la personne prime désormais sur la propriété et l'honneur de la famille.</p>
-</div>
-
-<h3>III — Le procès d'Aix-en-Provence (1978) et la loi de 1980</h3>
-<div class="narrative">
-  <p>Deux femmes violées lors d'un camping portent plainte. Les avocates <strong>Gisèle Halimi et Agnès Fischot</strong> construisent une stratégie sur <strong>trois dimensions</strong> : (1) <em>Sociétale</em> : pas le procès de ces trois violeurs — le procès du viol comme phénomène social. Dénonciation des comportements machistes. Les auteurs avaient argué que les victimes étaient lesbiennes et violées "par plaisir" — révélateur des représentations de l'époque. (2) <em>Juridique</em> : à cette époque, le viol est jugé en correctionnel (délit, pas crime). Halimi refuse la correctionnalisation et contribue à l'évolution de la définition pénale. Évolution des définitions : 1810 = "tout coïte illicite" (quelle est la liste des coïtes licites ?) → 1980 = "tout acte de pénétration sexuelle de quelque nature, commis sur la personne d'autrui par violence, contrainte, menace ou surprise" (mais ne couvre pas le viol sur l'auteur lui-même) → 2018 = ajout "ou sur la personne de l'auteur" → 2021 = ajout "tout acte gluuco-génitale" (ferme la porte à l'argument que la fellation ne serait pas un viol). Ce qui manque dans toutes ces définitions : la notion de <strong>non-consentement</strong>. (3) <em>Psychique</em> : reconnaissance du traumatisme du viol. Le procès comme élément de reconnaissance pour la victime.</p>
-  <p><strong>Débat sur le consentement :</strong> Le Magueresse (pour) : centrer la procédure sur ce que la victime voulait ou non. MacKinnon (contre) : (1) le consentement de la femme n'est pas toujours libre — il est façonné par le pouvoir que les hommes exercent ; (2) la charge de la preuve peserait sur la victime (difficile de prouver l'absence de quelque chose) ; (3) dans une relation désirée, il n'y a pas de consentement "en tant que tel" — la relation est réciproque ; (4) introduire le consentement déplacerait le focus sur le comportement de la femme plutôt que sur celui de l'homme.</p>
-</div>
-<div class="card mint">
-  <h4>🔗 Liens avec les autres thèmes</h4>
-  <ul>
-    <li><strong>↔ Déviance :</strong> l'évolution historique du viol illustre parfaitement que la déviance est une construction sociale. Ce qui était "normal" est aujourd'hui un crime — et vice versa.</li>
-    <li><strong>↔ Génocides :</strong> même mécanisme de déshumanisation et de minimisation des victimes (doute sur la résistance, attribution de responsabilité à la victime — honte portée par la victime).</li>
-    <li><strong>↔ Absence d'aide :</strong> les témoins de violences sexistes sont soumis aux mêmes mécanismes que dans l'effet témoin, renforcés par les normes de genre.</li>
-  </ul>
-</div>
-<div class="note">📚 <strong>Auteurs incontournables :</strong> Vigarello (<em>Histoire du viol</em>) · Halimi & Fischot (procès d'Aix 1978, trois dimensions) · MacKinnon (contre le consentement dans la loi) · Le Magueresse (pour le consentement) · Évolution légale : 1810 → 1980 → 2018 → 2021.</div></div>
-  <div id="fi-dev" class="fiche-panel" style="display:none"><h2>🌀 Fiche — Les comportements déviants : cadre général</h2>
-<div class="card rose">
-  <h4>🃏 Carte mentale</h4>
-  <div class="two-col">
-    <div>
-      <strong>Questions fondatrices du cours (Tostain)</strong><br>Qu'est-ce qu'un comportement déviant ? Au regard de quoi l'est-il ?<br>Dans quelle mesure la déviance relève-t-elle d'une construction sociale ?<br>Déviance sociale ou divergence des normes sociales ?<br>L'individu : acteur passif ou décisionnaire volontaire ?
-    </div>
-    <div>
-      <strong>Position de Tostain : approche interactionniste</strong><br>Ni déterminisme situationnel pur, ni explication individualiste/pathologisante. La personne <em>et</em> la situation se transforment mutuellement.<br><br>
-      <strong>Trois composantes de toute analyse</strong><br>Individu · Situation · Système
-    </div>
-  </div>
-  <div class="note" style="margin-top:10px;">⚡ <strong>Fil conducteur :</strong> ce cours montre comment des processus psychosociaux ordinaires (soumission, conformisme, identité groupale, représentations sociales) peuvent conduire des individus ordinaires à des comportements extraordinairement problématiques. Et comment les mêmes processus peuvent conduire à la résistance et au refus.</div>
-</div>
-
-<h3>I — Qu'est-ce que la déviance ? Définition et relativité</h3>
-<div class="narrative">
-  <p>Un comportement déviant est un comportement qui s'écarte des normes en vigueur dans un groupe ou une société donnée. Mais : quelles normes ? Définies par qui ? Dans quel contexte historique et culturel ? La déviance n'est pas un absolu moral universel — elle est relative à un système normatif particulier. Vigarello l'illustre : sous l'Ancien Régime, ce que nous appelons viol était souvent toléré, célébré comme liberté aristocratique. La définition légale du viol a changé quatre fois en deux siècles.</p>
-  <p>Plus radical encore : les comportements étudiés dans ce cours — génocide, tyrannie, radicalisation — ne sont <em>pas perçus comme déviants</em> par leurs auteurs. Les soldats du 101ème bataillon suivent les normes de leur groupe (obéissance, esprit de corps). Les génocidaires rwandais obéissent à leur État et à la RTLM. Les radicalisés appliquent la loi de leur interprétation du Coran. Eichmann résout des problèmes administratifs. Dans tous ces cas, le comportement "déviant" du point de vue de la morale universelle est <em>normal</em> du point de vue du système normatif local. Cette relativité n'implique pas le relativisme moral absolu — Arendt maintient que la responsabilité individuelle reste entière. Mais comprendre la relativité normative est indispensable.</p>
-</div>
-
-<h3>II — Les mécanismes généraux : de la situationnisme à l'interactionnisme</h3>
-<div class="narrative">
-  <p><strong>L'approche situationniste :</strong> les situations déterminent les comportements. Milgram (1974) — 65% des sujets administrent des chocs potentiellement mortels sur simple injonction d'autorité. Zimbardo (1971) — des étudiants normaux adoptent des comportements sadiques (mais fortement critiqué par Le Texier 2018). Darley & Latané (1970) — l'absence d'aide résulte de mécanismes situationnels, pas d'un manque d'empathie individuel. Approche puissante mais incomplète : elle réduit les individus à des réactants passifs.</p>
-  <p><strong>L'approche individualiste/pathologisante :</strong> les comportements problématiques résultent de pathologies individuelles. Rassurante (les monstres sont différents de nous) mais empiriquement fausse — les auteurs de génocides, les membres du 101ème bataillon, les gardiens de Stanford n'ont pas de profils psychopathologiques particuliers.</p>
-  <p><strong>L'approche interactionniste (Tostain) :</strong> la personne et la situation se transforment mutuellement. Ni réactants passifs ni auteurs entièrement autonomes. <strong>Trois composantes de toute analyse :</strong> (1) caractéristiques personnelles (adhésion aux idéologies, traits) — ex. Monstre ordinaire vs Bourreau volontaire ; (2) caractéristiques des situations sociales (ambiance collective, contexte) — ex. Nazisme, Rwanda, prison de Stanford ; (3) systèmes collectifs de pouvoir, potentiellement corrupteurs — ex. État génocidaire, organisation terroriste, système carcéral. Tostain refuse trois réductions : explication purement situationnelle ; explication purement individualiste ; explication pathologisante.</p>
-</div>
-
-<h3>III — La question de la responsabilité</h3>
-<div class="narrative">
-  <p>Traverse tout le cours. Arendt est la référence centrale : ceux qui ont perpétré la Shoah ont fait le choix de "démissionner de leur humanité" — d'abandonner leur pouvoir de penser, de juger, de distinguer le bien du mal. Ils sont responsables de ce choix, même si les circonstances l'ont facilité. La "banalité du mal" ne signifie pas que le mal est banal ou excusable — elle signifie que le mal peut s'inscrire dans des activités routinières chez des gens ordinaires qui ont renoncé à penser. Goldhagen radicalise : certains ne sont pas victimes de la situation — ils choisissent activement, prennent des initiatives, sont enthousiastes. Synthèse de Tostain : la responsabilité individuelle est réelle et maintenue, mais elle s'exerce dans des conditions qui la facilitent ou la rendent difficile. La prévention passe par la compréhension de ces conditions.</p>
-</div>
-<div class="card mint">
-  <h4>📋 Tableau de synthèse — Thèmes et mécanismes communs</h4>
-  <table class="schema">
-    <tr><th>Thème</th><th>Mécanisme central</th><th>Théorie/Auteur</th><th>Cas concret</th></tr>
-    <tr><td>Génocides</td><td>Déshumanisation + propagande en miroir + organisation idéologique + opérationnelle</td><td>Semelin, Browning, Arendt, Goldhagen, Reicher et al.</td><td>Rwanda 1994, Shoah</td></tr>
-    <tr><td>Tyrannie</td><td>Pente fatale situationnelle (critiquée) ou dynamiques identitaires interactives</td><td>Zimbardo (critiqué Le Texier 2018), Reicher & Haslam</td><td>SPE, BBC Prison Study</td></tr>
-    <tr><td>Absence d'aide</td><td>Dilution de responsabilité + ignorance plurielle + identité partagée</td><td>Darley & Latané, Levine & Crowther, Fisher et al.</td><td>Genovese, Kurosaki, Lancaster</td></tr>
-    <tr><td>Radicalisation</td><td>Escalier frustration-agression + subjectivation + Making a Virtue of Evil</td><td>Moghaddam, Ferret, Crettiez, Reicher et al.</td><td>Radicalisation djihadiste</td></tr>
-    <tr><td>Viol/Violences</td><td>Représentations sociales + construction historique de la norme</td><td>Vigarello, Halimi, MacKinnon, Le Magueresse</td><td>Procès d'Aix 1978, évolution légale</td></tr>
-  </table>
-</div></div>
-  <div id="fi-croises" class="fiche-panel" style="display:none"><h2>🔗 Sujets croisés — "Comparez X et Y"</h2>
-<div class="sub-tab-bar">
-  <button class="sub-tab-btn active" onclick="showCroise('cr-c1',this)">Zimbardo vs Reicher</button>
-  <button class="sub-tab-btn" onclick="showCroise('cr-c2',this)">Génocide vs Radicalisation</button>
-  <button class="sub-tab-btn" onclick="showCroise('cr-c3',this)">Browning vs Goldhagen</button>
-  <button class="sub-tab-btn" onclick="showCroise('cr-c4',this)">Situation vs Individu</button>
-  <button class="sub-tab-btn" onclick="showCroise('cr-c5',this)">Groupe : danger vs ressource</button>
-</div>
-<div id="cr-c1" class="croise-panel" style="display:block">
-  <h3>Zimbardo (SPE 1971) vs Reicher & Haslam (BBC Prison Study 2002)</h3>
-  <div class="narrative">
-    <p><strong>Point commun :</strong> paradigme carcéral (gardiens/détenus), participants recrutés et répartis aléatoirement, émergence de dynamiques de pouvoir, arrêt prématuré. <strong>Zimbardo :</strong> c'est la situation qui crée automatiquement la tyrannie. 6 facteurs de la pente fatale. Le groupe est dangereux. Les rôles corrompent. Lecture purement situationniste. <em>Mais :</em> critiqué par Le Texier (2018) — Zimbardo a prescrit les comportements des gardiens (biais de demande + biais expérimentateur). Ce n'est pas une pente fatale spontanée mais une déshumanisation prescrite. <strong>Reicher & Haslam :</strong> les gardiens n'osent pas exploiter leur pouvoir dans un premier temps. Ce sont les détenus — en conditions d'imperméabilité et d'illégitimité reconnue — qui se révoltent. La tyrannie n'émerge que quand les détenus n'ont plus de solidarité collective (faille du groupe + impuissance). Le groupe peut être une ressource de résistance. Lecture interactionniste (identité sociale de Tajfel).</p>
-    <p><strong>La critique de la SPE valide indirectement Reicher & Haslam :</strong> si la "pente fatale automatique" était un artefact prescrit par Zimbardo, alors la situation ne détermine pas spontanément la tyrannie. Ce que Zimbardo prétendait observer, il l'avait lui-même construit. <strong>Ce qu'on garde des deux :</strong> les mécanismes (rôles sociaux, conformisme, pression du groupe) sont réels — mais ils ne fonctionnent pas automatiquement. L'identité sociale ajoute la dimension active et interprétative.</p>
-    <table class="schema" style="margin-top:12px">
-      <tr><th></th><th>Zimbardo SPE (1971)</th><th>Reicher & Haslam BBC (2002)</th></tr>
-      <tr><td>Théorie de fond</td><td>Situationnisme behaviouriste</td><td>Identité sociale (Tajfel)</td></tr>
-      <tr><td>Rôle du groupe</td><td>Danger : conformisme, corruption</td><td>Ressource : résistance possible</td></tr>
-      <tr><td>Rôle des individus</td><td>Passifs, réactants à la situation</td><td>Acteurs, interprètes de la situation</td></tr>
-      <tr><td>Conditions de la tyrannie</td><td>Toute situation asymétrique</td><td>Faille du collectif + impuissance + illégitimité non reconnue</td></tr>
-      <tr><td>Critiques majeures</td><td>Le Texier 2018 : biais de demande + biais expérimentateur</td><td>Conditions permissives (pas de risques réels)</td></tr>
-    </table>
-  </div>
-</div>
-<div id="cr-c2" class="croise-panel" style="display:none">
-  <h3>Génocides vs Radicalisation : même structure, contextes différents</h3>
-  <div class="narrative">
-    <p><strong>Ce qui est commun :</strong> identité groupale forte et exclusive construite → désignation d'un ennemi (racialisation au Rwanda / désignation de l'Occident dans la radicalisation islamiste) → propagande en miroir ("ils nous menacent, nous nous défendons") → déshumanisation de l'ennemi (cancrelats / "kuffar") → Making a Virtue of Evil : la violence devient vertueuse → désengagement moral (Bandura) → engrenage progressif.</p>
-    <p><strong>Ce qui diffère :</strong> (1) <em>Échelle et organisation</em> : génocide = État organisateur (listes, milices, radio nationale, impunité légale) ; radicalisation peut être individuelle ou en petit groupe. (2) <em>Rôle de l'État</em> : génocide = l'État organise ; radicalisation = l'État est souvent la cible. (3) <em>Dimension identitaire choisie</em> : plus centrale dans la radicalisation (quête de sens, de fraternité, d'appartenance — Ferret) ; dans le génocide, la pression institutionnelle est plus déterminante. (4) <em>Temporalité</em> : génocide = explosion rapide après longue préparation ; radicalisation = processus graduel sur des années. (5) <em>Type de violence</em> : génocide = violence de masse systématique contre un groupe défini ; radicalisation = peut rester cognitive, peut conduire à des actes isolés. <strong>Conclusion :</strong> différence de degré, pas de nature. Les deux illustrent l'approche interactionniste de Tostain.</p>
-  </div>
-</div>
-<div id="cr-c3" class="croise-panel" style="display:none">
-  <h3>Browning (1992) vs Goldhagen (1996) : monstre ordinaire vs bourreau volontaire</h3>
-  <div class="narrative">
-    <p><strong>Même objet d'étude :</strong> les massacres commis par le 101ème bataillon de réserve de police allemande en Pologne (juillet 1942 – novembre 1943). <strong>Browning :</strong> hommes ordinaires, peu nazifiés, enrôlés de force. Le Major Trapp leur laisse le choix de refuser — sans sanction. Une douzaine refusent le premier jour. Pourtant 488 participent. Explication <em>situationnelle</em> : effet de surprise, soumission à l'autorité (état agentique/Milgram), conformisme groupal, engrenage progressif. Plus mécanismes de défense psychologiques. Implication : si vous ou moi avions été à leur place, nous aurions peut-être fait de même. <strong>Goldhagen :</strong> ces mêmes hommes faisaient des <em>choix actifs</em>, étaient enthousiastes, prenaient des initiatives. Eichmann harcelait ses supérieurs pour en faire plus. Antisémitisme d'élimination ancré culturellement dans l'identité nationale allemande. Explication <em>intentionnaliste</em> — responsabilité individuelle pleine et entière.</p>
-    <p><strong>La synthèse de Tostain :</strong> ni l'une ni l'autre seule ne suffit. Approche interactionniste. La situation crée les conditions, mais les individus les interprètent activement. Certains sont des monstres ordinaires, certains des bourreaux volontaires, la plupart se situent entre les deux — transformés progressivement par leur propre participation. <strong>Implication éthique :</strong> Arendt maintient que même les "monstres ordinaires" sont responsables — ils ont choisi de démissionner de leur humanité.</p>
-  </div>
-</div>
-<div id="cr-c4" class="croise-panel" style="display:none">
-  <h3>"Dans quelle mesure la situation détermine-t-elle les comportements déviants ?"</h3>
-  <div class="narrative">
-    <p><strong>Arguments POUR le primat de la situation :</strong> (1) Milgram (1974) : 65% administrent des chocs mortels sur simple injonction d'autorité — aucune corrélation avec les traits de personnalité. (2) 101ème bataillon (Browning) : hommes ordinaires, peu nazifiés. Mécanismes situationnels (surprise, soumission, conformisme, engrenage). (3) Effet témoin (Darley & Latané) : le nombre de témoins détermine statistiquement l'aide, indépendamment des traits. (4) Zimbardo : étudiants normaux → comportements sadiques (mais critiqué Le Texier).</p>
-    <p><strong>Limites de l'explication situationniste :</strong> (1) Variabilité interindividuelle : à conditions identiques, certains refusent (12 du 101ème, les Justes). Le déterminisme n'est jamais total. (2) Goldhagen : certains acteurs sont intentionnels, enthousiastes, actifs. (3) Ferret (2017) : deux individus exposés aux mêmes conditions de radicalisation ne suivent pas la même trajectoire. (4) Reicher & Haslam : les gardiens de la BBC Prison Study n'exploitent pas spontanément leur pouvoir. (5) Le Texier (2018) : la "pente fatale automatique" de Zimbardo était prescrite, pas spontanée. (6) Levine et al. (2020) : la norme réelle en danger = intervenir — la situation peut aussi mobiliser l'action positive.</p>
-    <p><strong>Synthèse :</strong> la situation est un déterminant puissant — mais pas absolu. L'approche interactionniste (Tostain) est plus juste : situation + personne se transforment mutuellement. Les individus interprètent activement leur contexte en fonction de leur identité, valeurs, appartenances. Analyse à trois niveaux : individu + situation + système.</p>
-  </div>
-</div>
-<div id="cr-c5" class="croise-panel" style="display:none">
-  <h3>Le groupe : facteur de danger ou ressource de résistance ?</h3>
-  <div class="narrative">
-    <p><strong>Le groupe comme facteur de danger :</strong> conformisme (Asch — pression vers la norme dominante même erronée ; 101ème bataillon) ; dilution de la responsabilité (Darley & Latané — plus le groupe est grand, moins chacun se sent responsable) ; esprit de corps (101ème bataillon — "se décharger" est ressenti comme une trahison) ; pente fatale Zimbardo (solidarité des gardiens renforce les comportements sadiques) ; milices génocidaires (appartenance normative valorise les massacres).</p>
-    <p><strong>Le groupe comme ressource de résistance :</strong> BBC Prison Study (Reicher & Haslam) : les détenus identifiés à leur groupe dans des conditions d'imperméabilité/illégitimité se révoltent efficacement ; contre-effet témoin (Levine & Crowther) : identité partagée avec la victime → plus de témoins = plus d'aide ; terrain réel (Levine et al. 2020) : plus on est nombreux, plus on peut se soutenir pour intervenir ; les Justes : dans tous les génocides, ceux qui refusent bénéficient de réseaux de soutien social qui maintiennent des valeurs alternatives.</p>
-    <p><strong>Synthèse (Tajfel & Turner) :</strong> le groupe peut être positif ou négatif selon la structure des relations (perméabilité, légitimité, stabilité, alternatives cognitives) et le degré d'identification. Ce qui détermine si le groupe devient instrument de tyrannie ou outil de résistance : l'idéologie qu'il porte, la structure des relations avec l'exogroupe, la capacité des individus à maintenir une pensée critique à l'intérieur du groupe. Reicher & Haslam contre Zimbardo : le groupe n'est pas intrinsèquement dangereux — c'est la combinaison d'un groupe sans solidarité interne, sans alternatives cognitives, et d'une autorité qui prescrit la violence, qui crée les conditions de la tyrannie.</p>
-  </div>
-</div></div>
-</div>
-
-<script>
-function showFiche(id, btn) {
-  document.querySelectorAll('.fiche-panel').forEach(function(p){ p.style.display='none'; });
-  document.getElementById(id).style.display = 'block';
-  document.querySelectorAll('#tab-fiches .sub-tab-btn').forEach(function(b){ b.classList.remove('active'); });
-  if(btn) btn.classList.add('active');
-}
-function showCroise(id, btn) {
-  document.querySelectorAll('.croise-panel').forEach(function(p){ p.style.display='none'; });
-  document.getElementById(id).style.display = 'block';
-  document.querySelectorAll('#fi-croises .sub-tab-btn').forEach(function(b){ b.classList.remove('active'); });
-  if(btn) btn.classList.add('active');
-}
-</script>
-
 <script>
   function showTab(name, btn) {
     document.querySelectorAll('.tab-content').forEach(function(t){ t.classList.remove('active'); });
@@ -2312,8 +1961,7 @@ function showCroise(id, btn) {
     'ge': 'td-genocides',
     'ra': 'td-radicalisation',
     'vi': 'td-viol',
-    'sy': 'syntheses',
-    'fi': 'fiches'
+    'sy': 'syntheses'
   };
   function showSub(prefix, name, btn) {
     var tabId = prefixMap[prefix] || prefix;
